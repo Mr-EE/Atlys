@@ -1,0 +1,270 @@
+Release 14.2 par P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+FRY::  Sat Jul 20 20:32:22 2013
+
+par -w -intstyle ise -ol high -mt 4 top_map.ncd top.ncd top.pcf 
+
+
+Constraints file: top.pcf.
+Loading device for application Rf_Device from file '6slx45.nph' in environment C:\Xilinx\14.2\ISE_DS\ISE\.
+   "top" is an NCD, version 3.2, device xc6slx45, package csg324, speed -2
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.260 Volts)
+
+
+Device speed data version:  "PRODUCTION 1.22 2012-07-09".
+
+
+
+Device Utilization Summary:
+
+Slice Logic Utilization:
+  Number of Slice Registers:                 1,249 out of  54,576    2%
+    Number used as Flip Flops:               1,249
+    Number used as Latches:                      0
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                0
+  Number of Slice LUTs:                      1,229 out of  27,288    4%
+    Number used as logic:                    1,152 out of  27,288    4%
+      Number using O6 output only:             523
+      Number using O5 output only:             115
+      Number using O5 and O6:                  514
+      Number used as ROM:                        0
+    Number used as Memory:                       0 out of   6,408    0%
+    Number used exclusively as route-thrus:     77
+      Number with same-slice register load:     73
+      Number with same-slice carry load:         4
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                   440 out of   6,822    6%
+  Nummber of MUXCYs used:                      508 out of  13,644    3%
+  Number of LUT Flip Flop pairs used:        1,415
+    Number with an unused Flip Flop:           352 out of   1,415   24%
+    Number with an unused LUT:                 186 out of   1,415   13%
+    Number of fully used LUT-FF pairs:         877 out of   1,415   61%
+    Number of slice register sites lost
+      to control set restrictions:               0 out of  54,576    0%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        49 out of     218   22%
+    Number of LOCed IOBs:                       49 out of      49  100%
+    IOB Flip Flops:                             20
+
+Specific Feature Utilization:
+  Number of RAMB16BWERs:                         5 out of     116    4%
+  Number of RAMB8BWERs:                          0 out of     232    0%
+  Number of BUFIO2/BUFIO2_2CLKs:                 2 out of      32    6%
+    Number used as BUFIO2s:                      2
+    Number used as BUFIO2_2CLKs:                 0
+  Number of BUFIO2FB/BUFIO2FB_2CLKs:             1 out of      32    3%
+    Number used as BUFIO2FBs:                    1
+    Number used as BUFIO2FB_2CLKs:               0
+  Number of BUFG/BUFGMUXs:                       6 out of      16   37%
+    Number used as BUFGs:                        6
+    Number used as BUFGMUX:                      0
+  Number of DCM/DCM_CLKGENs:                     0 out of       8    0%
+  Number of ILOGIC2/ISERDES2s:                   9 out of     376    2%
+    Number used as ILOGIC2s:                     9
+    Number used as ISERDES2s:                    0
+  Number of IODELAY2/IODRP2/IODRP2_MCBs:         9 out of     376    2%
+    Number used as IODELAY2s:                    9
+    Number used as IODRP2s:                      0
+    Number used as IODRP2_MCBs:                  0
+  Number of OLOGIC2/OSERDES2s:                  11 out of     376    2%
+    Number used as OLOGIC2s:                    11
+    Number used as OSERDES2s:                    0
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHs:                               0 out of     256    0%
+  Number of BUFPLLs:                             0 out of       8    0%
+  Number of BUFPLL_MCBs:                         0 out of       4    0%
+  Number of DSP48A1s:                            0 out of      58    0%
+  Number of ICAPs:                               0 out of       1    0%
+  Number of MCBs:                                0 out of       2    0%
+  Number of PCILOGICSEs:                         0 out of       2    0%
+  Number of PLL_ADVs:                            1 out of       4   25%
+  Number of PMVs:                                0 out of       1    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of SUSPEND_SYNCs:                       0 out of       1    0%
+
+
+Overall effort level (-ol):   High 
+Router effort level (-rl):    High 
+
+PAR will use up to 4 processors
+Starting Multi-threaded Router
+
+
+Phase  1  : 7054 unrouted;      REAL time: 9 secs 
+
+Phase  2  : 5598 unrouted;      REAL time: 12 secs 
+
+Phase  3  : 2185 unrouted;      REAL time: 14 secs 
+
+Phase  4  : 2185 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 17 secs 
+
+Updating file: top.ncd with current fully routed design.
+
+Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 19 secs 
+
+Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 19 secs 
+
+Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 19 secs 
+
+Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 19 secs 
+
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 19 secs 
+
+Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 19 secs 
+Total REAL time to Router completion: 19 secs 
+Total CPU time to Router completion (all processors): 23 secs 
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|               clk_i | BUFGMUX_X2Y12| No   |  242 |  0.061     |  1.772      |
++---------------------+--------------+------+------+------------+-------------+
+|UART_LINK/COM_CNTRL/ |              |      |      |            |             |
+|BAUD_GEN/baudx16_BUF |              |      |      |            |             |
+|                   G |  BUFGMUX_X2Y4| No   |   25 |  0.036     |  1.771      |
++---------------------+--------------+------+------+------------+-------------+
+|       GB_MAC/rx_clk |  BUFGMUX_X2Y3| No   |   46 |  0.016     |  1.750      |
++---------------------+--------------+------+------+------------+-------------+
+|UART_LINK/COM_CNTRL/ |              |      |      |            |             |
+|  BAUD_GEN/baud_BUFG |  BUFGMUX_X2Y2| No   |   17 |  0.027     |  1.770      |
++---------------------+--------------+------+------+------------+-------------+
+|             clk_gtx |  BUFGMUX_X2Y1| No   |   50 |  0.677     |  2.411      |
++---------------------+--------------+------+------+------------+-------------+
+|GB_PHY_MDIO/mdio_clk |              |      |      |            |             |
+|                _int |         Local|      |    9 |  0.062     |  5.525      |
++---------------------+--------------+------+------+------------+-------------+
+|GB_MAC/GB_PHY_GMII/g |              |      |      |            |             |
+|    mii_rx_clk_bufio |         Local|      |    9 |  0.005     |  1.520      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+* The fanout is the number of component pins not the individual BEL loads,
+for example SLICE loads not FF loads.
+
+Timing Score: 0 (Setup: 0, Hold: 0, Component Switching Limit: 0)
+
+Number of Timing Constraints that were not applied: 3
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  TIMEGRP "gmii_rx" OFFSET = IN 2 ns VALID  | SETUP       |     0.032ns|     1.968ns|       0|           0
+  2.6 ns BEFORE COMP "phy_gmii_rxc"         | HOLD        |     0.154ns|            |       0|           0
+   "RISING"                                 |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_DSM0_clkout1 = PERIOD TIMEGRP "DSM0_cl | SETUP       |     0.497ns|     7.503ns|       0|           0
+  kout1" TS_clk_in / 1.25 HIGH 50%          | HOLD        |     0.387ns|            |       0|           0
+  INPUT_JITTER 0.25 ns                      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_GB_MAC_GB_PHY_GMII_gmii_rx_clk_tobufg  | SETUP       |     1.767ns|     6.233ns|       0|           0
+  = PERIOD TIMEGRP         "GB_MAC_GB_PHY_G | HOLD        |     0.267ns|            |       0|           0
+  MII_gmii_rx_clk_tobufg" TS_phy_gmii_rxc H |             |            |            |        |            
+  IGH 50%         INPUT_JITTER 0.16 ns      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_DSM0_clkout0 = PERIOD TIMEGRP "DSM0_cl | SETUP       |     3.407ns|    10.176ns|       0|           0
+  kout0" TS_clk_in / 0.625 HIGH 50%         | HOLD        |     0.382ns|            |       0|           0
+   INPUT_JITTER 0.25 ns                     |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_GB_MAC_GB_PHY_GMII_gmii_rx_clk_bufio = | MINPERIOD   |     6.134ns|     1.866ns|       0|           0
+   PERIOD TIMEGRP         "GB_MAC_GB_PHY_GM |             |            |            |        |            
+  II_gmii_rx_clk_bufio" TS_phy_gmii_rxc HIG |             |            |            |        |            
+  H 50%         INPUT_JITTER 0.16 ns        |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_clk_in = PERIOD TIMEGRP "clk_in" 10 ns | MINLOWPULSE |     6.666ns|     3.334ns|       0|           0
+   HIGH 50% INPUT_JITTER 0.25 ns            |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_phy_gmii_rxc = PERIOD TIMEGRP "phy_gmi | MINPERIOD   |     6.948ns|     1.052ns|       0|           0
+  i_rxc" 8 ns HIGH 50% INPUT_JITTER         |             |            |            |        |            
+   0.16 ns                                  |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TIMEGRP "gmii_tx" OFFSET = OUT AFTER COMP | MAXDELAY    |         N/A|    10.360ns|     N/A|           0
+   "clk_in" REFERENCE_PIN BEL         "phy_ |             |            |            |        |            
+  gmii_txc"                                 |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Review Timing Report for more details on the following derived constraints.
+To create a Timing Report, run "trce -v 12 -fastpaths -o design_timing_report design.ncd design.pcf"
+or "Run Timing Analysis" from Timing Analyzer (timingan).
+Derived Constraints for TS_clk_in
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_clk_in                      |     10.000ns|      3.334ns|      9.379ns|            0|            0|            0|        25784|
+| TS_DSM0_clkout1               |      8.000ns|      7.503ns|          N/A|            0|            0|         9392|            0|
+| TS_DSM0_clkout0               |     16.000ns|     10.176ns|          N/A|            0|            0|        16392|            0|
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+Derived Constraints for TS_phy_gmii_rxc
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_phy_gmii_rxc                |      8.000ns|      1.052ns|      6.233ns|            0|            0|            0|         5064|
+| TS_GB_MAC_GB_PHY_GMII_gmii_rx_|      8.000ns|      6.233ns|          N/A|            0|            0|         5064|            0|
+| clk_tobufg                    |             |             |             |             |             |             |             |
+| TS_GB_MAC_GB_PHY_GMII_gmii_rx_|      8.000ns|      1.866ns|          N/A|            0|            0|            0|            0|
+| clk_bufio                     |             |             |             |             |             |             |             |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+All constraints were met.
+INFO:Timing:2761 - N/A entries in the Constraints List may indicate that the 
+   constraint is not analyzed due to the following: No paths covered by this 
+   constraint; Other constraints intersect with this constraint; or This 
+   constraint was disabled by a Path Tracing Control. Please run the Timespec 
+   Interaction Report (TSI) via command line (trce tsi) or Timing Analyzer GUI.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 21 secs 
+Total CPU time to PAR completion (all processors): 24 secs 
+
+Peak Memory Usage:  383 MB
+
+Placer: Placement generated during map.
+Routing: Completed - No errors found.
+Timing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 0
+Number of info messages: 0
+
+Writing design to file top.ncd
+
+
+
+PAR done!

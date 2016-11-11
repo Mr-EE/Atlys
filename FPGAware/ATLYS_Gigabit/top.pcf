@@ -1,0 +1,1094 @@
+//! **************************************************************************
+// Written by: Map P.28xd on Sat Jul 20 20:32:17 2013
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "switches<0>" LOCATE = SITE "A10" LEVEL 1;
+COMP "switches<1>" LOCATE = SITE "D14" LEVEL 1;
+COMP "switches<2>" LOCATE = SITE "C14" LEVEL 1;
+COMP "switches<3>" LOCATE = SITE "P15" LEVEL 1;
+COMP "switches<4>" LOCATE = SITE "P12" LEVEL 1;
+COMP "switches<5>" LOCATE = SITE "R5" LEVEL 1;
+COMP "switches<6>" LOCATE = SITE "T5" LEVEL 1;
+COMP "switches<7>" LOCATE = SITE "E4" LEVEL 1;
+COMP "leds<0>" LOCATE = SITE "U18" LEVEL 1;
+COMP "btns<0>" LOCATE = SITE "N4" LEVEL 1;
+COMP "leds<1>" LOCATE = SITE "M14" LEVEL 1;
+COMP "btns<1>" LOCATE = SITE "P4" LEVEL 1;
+COMP "leds<2>" LOCATE = SITE "N14" LEVEL 1;
+COMP "btns<2>" LOCATE = SITE "P3" LEVEL 1;
+COMP "leds<3>" LOCATE = SITE "L14" LEVEL 1;
+COMP "btns<3>" LOCATE = SITE "F6" LEVEL 1;
+COMP "leds<4>" LOCATE = SITE "M13" LEVEL 1;
+COMP "btns<4>" LOCATE = SITE "F5" LEVEL 1;
+COMP "leds<5>" LOCATE = SITE "D4" LEVEL 1;
+COMP "leds<6>" LOCATE = SITE "P16" LEVEL 1;
+COMP "leds<7>" LOCATE = SITE "N12" LEVEL 1;
+COMP "phy_mdc" LOCATE = SITE "F16" LEVEL 1;
+COMP "phy_rst" LOCATE = SITE "G13" LEVEL 1;
+COMP "uart_rx" LOCATE = SITE "A16" LEVEL 1;
+COMP "uart_tx" LOCATE = SITE "B16" LEVEL 1;
+COMP "phy_gmii_rx_dv" LOCATE = SITE "F17" LEVEL 1;
+COMP "phy_gmii_tx_er" LOCATE = SITE "G18" LEVEL 1;
+COMP "hard_rst" LOCATE = SITE "T15" LEVEL 1;
+COMP "clk_in" LOCATE = SITE "L15" LEVEL 1;
+COMP "phy_mdio" LOCATE = SITE "N17" LEVEL 1;
+COMP "phy_gmii_rxc" LOCATE = SITE "K15" LEVEL 1;
+COMP "phy_gmii_txc" LOCATE = SITE "L12" LEVEL 1;
+COMP "phy_gmii_rxd<0>" LOCATE = SITE "G16" LEVEL 1;
+COMP "phy_gmii_rxd<1>" LOCATE = SITE "H14" LEVEL 1;
+COMP "phy_gmii_rxd<2>" LOCATE = SITE "E16" LEVEL 1;
+COMP "phy_gmii_rxd<3>" LOCATE = SITE "F15" LEVEL 1;
+COMP "phy_gmii_rxd<4>" LOCATE = SITE "F14" LEVEL 1;
+COMP "phy_gmii_rxd<5>" LOCATE = SITE "E18" LEVEL 1;
+COMP "phy_gmii_rxd<6>" LOCATE = SITE "D18" LEVEL 1;
+COMP "phy_gmii_rxd<7>" LOCATE = SITE "D17" LEVEL 1;
+COMP "phy_gmii_txd<0>" LOCATE = SITE "H16" LEVEL 1;
+COMP "phy_gmii_txd<1>" LOCATE = SITE "H13" LEVEL 1;
+COMP "phy_gmii_txd<2>" LOCATE = SITE "K14" LEVEL 1;
+COMP "phy_gmii_txd<3>" LOCATE = SITE "K13" LEVEL 1;
+COMP "phy_gmii_txd<4>" LOCATE = SITE "J13" LEVEL 1;
+COMP "phy_gmii_txd<5>" LOCATE = SITE "G14" LEVEL 1;
+COMP "phy_gmii_txd<6>" LOCATE = SITE "H12" LEVEL 1;
+COMP "phy_gmii_txd<7>" LOCATE = SITE "K12" LEVEL 1;
+COMP "phy_gmii_tx_ctl" LOCATE = SITE "H15" LEVEL 1;
+PIN
+        GB_MAC/TX_BRAM_DATA/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram_pins<28>
+        = BEL
+        "GB_MAC/TX_BRAM_DATA/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram"
+        PINNAME CLKA;
+PIN
+        GB_MAC/RX_BRAM_DATA/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SDP.SIMPLE_PRIM18.ram_pins<29>
+        = BEL
+        "GB_MAC/RX_BRAM_DATA/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SDP.SIMPLE_PRIM18.ram"
+        PINNAME CLKB;
+PIN
+        GB_MAC/RX_IFG_BRAM_DATA/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SDP.SIMPLE_PRIM18.ram_pins<29>
+        = BEL
+        "GB_MAC/RX_IFG_BRAM_DATA/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SDP.SIMPLE_PRIM18.ram"
+        PINNAME CLKB;
+PIN
+        UART_LINK/COM_CNTRL/RX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.WIDE_PRIM9.ram_pins<29>
+        = BEL
+        "UART_LINK/COM_CNTRL/RX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.WIDE_PRIM9.ram"
+        PINNAME CLKB;
+PIN
+        UART_LINK/COM_CNTRL/TX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.WIDE_PRIM9.ram_pins<28>
+        = BEL
+        "UART_LINK/COM_CNTRL/TX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.WIDE_PRIM9.ram"
+        PINNAME CLKA;
+TIMEGRP DSM0_clkout0 = BEL "LED_BLINK_MODULE/cnt1_0" BEL
+        "LED_BLINK_MODULE/cnt1_1" BEL "LED_BLINK_MODULE/cnt1_2" BEL
+        "LED_BLINK_MODULE/cnt1_3" BEL "LED_BLINK_MODULE/cnt1_4" BEL
+        "LED_BLINK_MODULE/cnt1_5" BEL "LED_BLINK_MODULE/cnt1_6" BEL
+        "LED_BLINK_MODULE/cnt1_7" BEL "LED_BLINK_MODULE/cnt1_8" BEL
+        "LED_BLINK_MODULE/cnt1_9" BEL "LED_BLINK_MODULE/cnt1_10" BEL
+        "LED_BLINK_MODULE/cnt1_11" BEL "LED_BLINK_MODULE/cnt1_12" BEL
+        "LED_BLINK_MODULE/cnt1_13" BEL "LED_BLINK_MODULE/cnt1_14" BEL
+        "LED_BLINK_MODULE/cnt1_15" BEL "LED_BLINK_MODULE/cnt1_16" BEL
+        "LED_BLINK_MODULE/cnt1_17" BEL "LED_BLINK_MODULE/cnt1_18" BEL
+        "LED_BLINK_MODULE/cnt1_19" BEL "LED_BLINK_MODULE/cnt1_20" BEL
+        "LED_BLINK_MODULE/cnt1_21" BEL "LED_BLINK_MODULE/cnt1_22" BEL
+        "LED_BLINK_MODULE/cnt1_23" BEL "LED_BLINK_MODULE/cnt1_24" BEL
+        "LED_BLINK_MODULE/cnt1_25" BEL "DSM0/clkout1_buf" BEL
+        "GB_PHY_MDIO/mdio_state_FSM_FFd1" BEL
+        "GB_PHY_MDIO/mdio_state_FSM_FFd2" BEL
+        "GB_PHY_MDIO/MDIO_CLK_DIVIDE.cnt_6" BEL
+        "GB_PHY_MDIO/MDIO_CLK_DIVIDE.cnt_5" BEL
+        "GB_PHY_MDIO/MDIO_CLK_DIVIDE.cnt_4" BEL
+        "GB_PHY_MDIO/MDIO_CLK_DIVIDE.cnt_3" BEL
+        "GB_PHY_MDIO/MDIO_CLK_DIVIDE.cnt_2" BEL
+        "GB_PHY_MDIO/MDIO_CLK_DIVIDE.cnt_1" BEL
+        "GB_PHY_MDIO/MDIO_CLK_DIVIDE.cnt_0" BEL "GB_PHY_MDIO/wb_data_o_15" BEL
+        "GB_PHY_MDIO/wb_data_o_14" BEL "GB_PHY_MDIO/wb_data_o_13" BEL
+        "GB_PHY_MDIO/wb_data_o_12" BEL "GB_PHY_MDIO/wb_data_o_11" BEL
+        "GB_PHY_MDIO/wb_data_o_10" BEL "GB_PHY_MDIO/wb_data_o_9" BEL
+        "GB_PHY_MDIO/wb_data_o_8" BEL "GB_PHY_MDIO/wb_data_o_7" BEL
+        "GB_PHY_MDIO/wb_data_o_6" BEL "GB_PHY_MDIO/wb_data_o_5" BEL
+        "GB_PHY_MDIO/wb_data_o_4" BEL "GB_PHY_MDIO/wb_data_o_3" BEL
+        "GB_PHY_MDIO/wb_data_o_2" BEL "GB_PHY_MDIO/wb_data_o_1" BEL
+        "GB_PHY_MDIO/wb_data_o_0" BEL "GB_PHY_MDIO/mdio_rd_data_15" BEL
+        "GB_PHY_MDIO/mdio_rd_data_14" BEL "GB_PHY_MDIO/mdio_rd_data_13" BEL
+        "GB_PHY_MDIO/mdio_rd_data_12" BEL "GB_PHY_MDIO/mdio_rd_data_11" BEL
+        "GB_PHY_MDIO/mdio_rd_data_10" BEL "GB_PHY_MDIO/mdio_rd_data_9" BEL
+        "GB_PHY_MDIO/mdio_rd_data_8" BEL "GB_PHY_MDIO/mdio_rd_data_7" BEL
+        "GB_PHY_MDIO/mdio_rd_data_6" BEL "GB_PHY_MDIO/mdio_rd_data_5" BEL
+        "GB_PHY_MDIO/mdio_rd_data_4" BEL "GB_PHY_MDIO/mdio_rd_data_3" BEL
+        "GB_PHY_MDIO/mdio_rd_data_2" BEL "GB_PHY_MDIO/mdio_rd_data_1" BEL
+        "GB_PHY_MDIO/mdio_rd_data_0" BEL "GB_PHY_MDIO/mdio_sel" BEL
+        "GB_PHY_MDIO/MDIO_INTERFACE.bitpos_4" BEL
+        "GB_PHY_MDIO/MDIO_INTERFACE.bitpos_3" BEL
+        "GB_PHY_MDIO/MDIO_INTERFACE.bitpos_2" BEL
+        "GB_PHY_MDIO/MDIO_INTERFACE.bitpos_1" BEL
+        "GB_PHY_MDIO/MDIO_INTERFACE.bitpos_0" BEL
+        "GB_PHY_MDIO/MDIO_INTERFACE.packet_end" BEL "GB_PHY_MDIO/reg_addr_10"
+        BEL "GB_PHY_MDIO/reg_addr_9" BEL "GB_PHY_MDIO/reg_addr_8" BEL
+        "GB_PHY_MDIO/reg_addr_7" BEL "GB_PHY_MDIO/reg_addr_6" BEL
+        "GB_PHY_MDIO/reg_addr_5" BEL "GB_PHY_MDIO/reg_addr_4" BEL
+        "GB_PHY_MDIO/reg_addr_3" BEL "GB_PHY_MDIO/reg_addr_2" BEL
+        "GB_PHY_MDIO/reg_addr_1" BEL "GB_PHY_MDIO/reg_addr_0" BEL
+        "GB_PHY_MDIO/wb_int_ack_o" BEL "GB_PHY_MDIO/reg_wr_data_15" BEL
+        "GB_PHY_MDIO/reg_wr_data_14" BEL "GB_PHY_MDIO/reg_wr_data_13" BEL
+        "GB_PHY_MDIO/reg_wr_data_12" BEL "GB_PHY_MDIO/reg_wr_data_11" BEL
+        "GB_PHY_MDIO/reg_wr_data_10" BEL "GB_PHY_MDIO/reg_wr_data_9" BEL
+        "GB_PHY_MDIO/reg_wr_data_8" BEL "GB_PHY_MDIO/reg_wr_data_7" BEL
+        "GB_PHY_MDIO/reg_wr_data_6" BEL "GB_PHY_MDIO/reg_wr_data_5" BEL
+        "GB_PHY_MDIO/reg_wr_data_4" BEL "GB_PHY_MDIO/reg_wr_data_3" BEL
+        "GB_PHY_MDIO/reg_wr_data_2" BEL "GB_PHY_MDIO/reg_wr_data_1" BEL
+        "GB_PHY_MDIO/reg_wr_data_0" BEL "GPIO_MODULE/wb_data_o_7" BEL
+        "GPIO_MODULE/wb_data_o_6" BEL "GPIO_MODULE/wb_data_o_5" BEL
+        "GPIO_MODULE/wb_data_o_4" BEL "GPIO_MODULE/wb_data_o_3" BEL
+        "GPIO_MODULE/wb_data_o_2" BEL "GPIO_MODULE/wb_data_o_1" BEL
+        "GPIO_MODULE/wb_data_o_0" BEL "GPIO_MODULE/wb_int_ack_o" BEL
+        "GPIO_MODULE/reg_led_6" BEL "GPIO_MODULE/reg_led_5" BEL
+        "GPIO_MODULE/reg_led_4" BEL "GPIO_MODULE/reg_led_3" BEL
+        "GPIO_MODULE/reg_led_2" BEL "GPIO_MODULE/reg_led_1" BEL
+        "GPIO_MODULE/reg_led_0" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[7].DEBOUNCE_SWITCHES/counter_out_19" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[7].DEBOUNCE_SWITCHES/counter_out_18" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[7].DEBOUNCE_SWITCHES/counter_out_17" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[7].DEBOUNCE_SWITCHES/counter_out_16" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[7].DEBOUNCE_SWITCHES/counter_out_15" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[7].DEBOUNCE_SWITCHES/counter_out_14" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[7].DEBOUNCE_SWITCHES/counter_out_13" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[7].DEBOUNCE_SWITCHES/counter_out_12" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[7].DEBOUNCE_SWITCHES/counter_out_11" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[7].DEBOUNCE_SWITCHES/counter_out_10" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[7].DEBOUNCE_SWITCHES/counter_out_9" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[7].DEBOUNCE_SWITCHES/counter_out_8" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[7].DEBOUNCE_SWITCHES/counter_out_7" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[7].DEBOUNCE_SWITCHES/counter_out_6" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[7].DEBOUNCE_SWITCHES/counter_out_5" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[7].DEBOUNCE_SWITCHES/counter_out_4" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[7].DEBOUNCE_SWITCHES/counter_out_3" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[7].DEBOUNCE_SWITCHES/counter_out_2" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[7].DEBOUNCE_SWITCHES/counter_out_1" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[7].DEBOUNCE_SWITCHES/counter_out_0" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[7].DEBOUNCE_SWITCHES/flipflops_1" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[7].DEBOUNCE_SWITCHES/flipflops_0" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[6].DEBOUNCE_SWITCHES/counter_out_19" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[6].DEBOUNCE_SWITCHES/counter_out_18" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[6].DEBOUNCE_SWITCHES/counter_out_17" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[6].DEBOUNCE_SWITCHES/counter_out_16" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[6].DEBOUNCE_SWITCHES/counter_out_15" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[6].DEBOUNCE_SWITCHES/counter_out_14" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[6].DEBOUNCE_SWITCHES/counter_out_13" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[6].DEBOUNCE_SWITCHES/counter_out_12" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[6].DEBOUNCE_SWITCHES/counter_out_11" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[6].DEBOUNCE_SWITCHES/counter_out_10" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[6].DEBOUNCE_SWITCHES/counter_out_9" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[6].DEBOUNCE_SWITCHES/counter_out_8" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[6].DEBOUNCE_SWITCHES/counter_out_7" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[6].DEBOUNCE_SWITCHES/counter_out_6" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[6].DEBOUNCE_SWITCHES/counter_out_5" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[6].DEBOUNCE_SWITCHES/counter_out_4" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[6].DEBOUNCE_SWITCHES/counter_out_3" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[6].DEBOUNCE_SWITCHES/counter_out_2" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[6].DEBOUNCE_SWITCHES/counter_out_1" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[6].DEBOUNCE_SWITCHES/counter_out_0" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[6].DEBOUNCE_SWITCHES/flipflops_1" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[6].DEBOUNCE_SWITCHES/flipflops_0" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[5].DEBOUNCE_SWITCHES/counter_out_19" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[5].DEBOUNCE_SWITCHES/counter_out_18" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[5].DEBOUNCE_SWITCHES/counter_out_17" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[5].DEBOUNCE_SWITCHES/counter_out_16" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[5].DEBOUNCE_SWITCHES/counter_out_15" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[5].DEBOUNCE_SWITCHES/counter_out_14" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[5].DEBOUNCE_SWITCHES/counter_out_13" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[5].DEBOUNCE_SWITCHES/counter_out_12" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[5].DEBOUNCE_SWITCHES/counter_out_11" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[5].DEBOUNCE_SWITCHES/counter_out_10" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[5].DEBOUNCE_SWITCHES/counter_out_9" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[5].DEBOUNCE_SWITCHES/counter_out_8" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[5].DEBOUNCE_SWITCHES/counter_out_7" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[5].DEBOUNCE_SWITCHES/counter_out_6" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[5].DEBOUNCE_SWITCHES/counter_out_5" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[5].DEBOUNCE_SWITCHES/counter_out_4" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[5].DEBOUNCE_SWITCHES/counter_out_3" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[5].DEBOUNCE_SWITCHES/counter_out_2" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[5].DEBOUNCE_SWITCHES/counter_out_1" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[5].DEBOUNCE_SWITCHES/counter_out_0" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[5].DEBOUNCE_SWITCHES/flipflops_1" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[5].DEBOUNCE_SWITCHES/flipflops_0" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[4].DEBOUNCE_SWITCHES/counter_out_19" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[4].DEBOUNCE_SWITCHES/counter_out_18" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[4].DEBOUNCE_SWITCHES/counter_out_17" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[4].DEBOUNCE_SWITCHES/counter_out_16" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[4].DEBOUNCE_SWITCHES/counter_out_15" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[4].DEBOUNCE_SWITCHES/counter_out_14" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[4].DEBOUNCE_SWITCHES/counter_out_13" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[4].DEBOUNCE_SWITCHES/counter_out_12" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[4].DEBOUNCE_SWITCHES/counter_out_11" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[4].DEBOUNCE_SWITCHES/counter_out_10" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[4].DEBOUNCE_SWITCHES/counter_out_9" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[4].DEBOUNCE_SWITCHES/counter_out_8" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[4].DEBOUNCE_SWITCHES/counter_out_7" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[4].DEBOUNCE_SWITCHES/counter_out_6" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[4].DEBOUNCE_SWITCHES/counter_out_5" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[4].DEBOUNCE_SWITCHES/counter_out_4" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[4].DEBOUNCE_SWITCHES/counter_out_3" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[4].DEBOUNCE_SWITCHES/counter_out_2" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[4].DEBOUNCE_SWITCHES/counter_out_1" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[4].DEBOUNCE_SWITCHES/counter_out_0" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[4].DEBOUNCE_SWITCHES/flipflops_1" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[4].DEBOUNCE_SWITCHES/flipflops_0" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[3].DEBOUNCE_SWITCHES/counter_out_19" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[3].DEBOUNCE_SWITCHES/counter_out_18" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[3].DEBOUNCE_SWITCHES/counter_out_17" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[3].DEBOUNCE_SWITCHES/counter_out_16" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[3].DEBOUNCE_SWITCHES/counter_out_15" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[3].DEBOUNCE_SWITCHES/counter_out_14" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[3].DEBOUNCE_SWITCHES/counter_out_13" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[3].DEBOUNCE_SWITCHES/counter_out_12" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[3].DEBOUNCE_SWITCHES/counter_out_11" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[3].DEBOUNCE_SWITCHES/counter_out_10" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[3].DEBOUNCE_SWITCHES/counter_out_9" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[3].DEBOUNCE_SWITCHES/counter_out_8" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[3].DEBOUNCE_SWITCHES/counter_out_7" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[3].DEBOUNCE_SWITCHES/counter_out_6" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[3].DEBOUNCE_SWITCHES/counter_out_5" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[3].DEBOUNCE_SWITCHES/counter_out_4" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[3].DEBOUNCE_SWITCHES/counter_out_3" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[3].DEBOUNCE_SWITCHES/counter_out_2" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[3].DEBOUNCE_SWITCHES/counter_out_1" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[3].DEBOUNCE_SWITCHES/counter_out_0" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[3].DEBOUNCE_SWITCHES/flipflops_1" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[3].DEBOUNCE_SWITCHES/flipflops_0" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[2].DEBOUNCE_SWITCHES/counter_out_19" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[2].DEBOUNCE_SWITCHES/counter_out_18" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[2].DEBOUNCE_SWITCHES/counter_out_17" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[2].DEBOUNCE_SWITCHES/counter_out_16" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[2].DEBOUNCE_SWITCHES/counter_out_15" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[2].DEBOUNCE_SWITCHES/counter_out_14" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[2].DEBOUNCE_SWITCHES/counter_out_13" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[2].DEBOUNCE_SWITCHES/counter_out_12" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[2].DEBOUNCE_SWITCHES/counter_out_11" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[2].DEBOUNCE_SWITCHES/counter_out_10" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[2].DEBOUNCE_SWITCHES/counter_out_9" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[2].DEBOUNCE_SWITCHES/counter_out_8" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[2].DEBOUNCE_SWITCHES/counter_out_7" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[2].DEBOUNCE_SWITCHES/counter_out_6" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[2].DEBOUNCE_SWITCHES/counter_out_5" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[2].DEBOUNCE_SWITCHES/counter_out_4" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[2].DEBOUNCE_SWITCHES/counter_out_3" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[2].DEBOUNCE_SWITCHES/counter_out_2" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[2].DEBOUNCE_SWITCHES/counter_out_1" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[2].DEBOUNCE_SWITCHES/counter_out_0" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[2].DEBOUNCE_SWITCHES/flipflops_1" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[2].DEBOUNCE_SWITCHES/flipflops_0" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[1].DEBOUNCE_SWITCHES/counter_out_19" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[1].DEBOUNCE_SWITCHES/counter_out_18" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[1].DEBOUNCE_SWITCHES/counter_out_17" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[1].DEBOUNCE_SWITCHES/counter_out_16" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[1].DEBOUNCE_SWITCHES/counter_out_15" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[1].DEBOUNCE_SWITCHES/counter_out_14" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[1].DEBOUNCE_SWITCHES/counter_out_13" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[1].DEBOUNCE_SWITCHES/counter_out_12" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[1].DEBOUNCE_SWITCHES/counter_out_11" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[1].DEBOUNCE_SWITCHES/counter_out_10" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[1].DEBOUNCE_SWITCHES/counter_out_9" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[1].DEBOUNCE_SWITCHES/counter_out_8" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[1].DEBOUNCE_SWITCHES/counter_out_7" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[1].DEBOUNCE_SWITCHES/counter_out_6" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[1].DEBOUNCE_SWITCHES/counter_out_5" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[1].DEBOUNCE_SWITCHES/counter_out_4" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[1].DEBOUNCE_SWITCHES/counter_out_3" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[1].DEBOUNCE_SWITCHES/counter_out_2" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[1].DEBOUNCE_SWITCHES/counter_out_1" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[1].DEBOUNCE_SWITCHES/counter_out_0" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[1].DEBOUNCE_SWITCHES/flipflops_1" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[1].DEBOUNCE_SWITCHES/flipflops_0" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[0].DEBOUNCE_SWITCHES/counter_out_19" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[0].DEBOUNCE_SWITCHES/counter_out_18" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[0].DEBOUNCE_SWITCHES/counter_out_17" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[0].DEBOUNCE_SWITCHES/counter_out_16" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[0].DEBOUNCE_SWITCHES/counter_out_15" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[0].DEBOUNCE_SWITCHES/counter_out_14" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[0].DEBOUNCE_SWITCHES/counter_out_13" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[0].DEBOUNCE_SWITCHES/counter_out_12" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[0].DEBOUNCE_SWITCHES/counter_out_11" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[0].DEBOUNCE_SWITCHES/counter_out_10" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[0].DEBOUNCE_SWITCHES/counter_out_9" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[0].DEBOUNCE_SWITCHES/counter_out_8" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[0].DEBOUNCE_SWITCHES/counter_out_7" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[0].DEBOUNCE_SWITCHES/counter_out_6" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[0].DEBOUNCE_SWITCHES/counter_out_5" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[0].DEBOUNCE_SWITCHES/counter_out_4" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[0].DEBOUNCE_SWITCHES/counter_out_3" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[0].DEBOUNCE_SWITCHES/counter_out_2" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[0].DEBOUNCE_SWITCHES/counter_out_1" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[0].DEBOUNCE_SWITCHES/counter_out_0" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[0].DEBOUNCE_SWITCHES/flipflops_1" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[0].DEBOUNCE_SWITCHES/flipflops_0" BEL
+        "GPIO_MODULE/DB_BTN_GEN[4].DEBOUNCE_BTNS/counter_out_19" BEL
+        "GPIO_MODULE/DB_BTN_GEN[4].DEBOUNCE_BTNS/counter_out_18" BEL
+        "GPIO_MODULE/DB_BTN_GEN[4].DEBOUNCE_BTNS/counter_out_17" BEL
+        "GPIO_MODULE/DB_BTN_GEN[4].DEBOUNCE_BTNS/counter_out_16" BEL
+        "GPIO_MODULE/DB_BTN_GEN[4].DEBOUNCE_BTNS/counter_out_15" BEL
+        "GPIO_MODULE/DB_BTN_GEN[4].DEBOUNCE_BTNS/counter_out_14" BEL
+        "GPIO_MODULE/DB_BTN_GEN[4].DEBOUNCE_BTNS/counter_out_13" BEL
+        "GPIO_MODULE/DB_BTN_GEN[4].DEBOUNCE_BTNS/counter_out_12" BEL
+        "GPIO_MODULE/DB_BTN_GEN[4].DEBOUNCE_BTNS/counter_out_11" BEL
+        "GPIO_MODULE/DB_BTN_GEN[4].DEBOUNCE_BTNS/counter_out_10" BEL
+        "GPIO_MODULE/DB_BTN_GEN[4].DEBOUNCE_BTNS/counter_out_9" BEL
+        "GPIO_MODULE/DB_BTN_GEN[4].DEBOUNCE_BTNS/counter_out_8" BEL
+        "GPIO_MODULE/DB_BTN_GEN[4].DEBOUNCE_BTNS/counter_out_7" BEL
+        "GPIO_MODULE/DB_BTN_GEN[4].DEBOUNCE_BTNS/counter_out_6" BEL
+        "GPIO_MODULE/DB_BTN_GEN[4].DEBOUNCE_BTNS/counter_out_5" BEL
+        "GPIO_MODULE/DB_BTN_GEN[4].DEBOUNCE_BTNS/counter_out_4" BEL
+        "GPIO_MODULE/DB_BTN_GEN[4].DEBOUNCE_BTNS/counter_out_3" BEL
+        "GPIO_MODULE/DB_BTN_GEN[4].DEBOUNCE_BTNS/counter_out_2" BEL
+        "GPIO_MODULE/DB_BTN_GEN[4].DEBOUNCE_BTNS/counter_out_1" BEL
+        "GPIO_MODULE/DB_BTN_GEN[4].DEBOUNCE_BTNS/counter_out_0" BEL
+        "GPIO_MODULE/DB_BTN_GEN[4].DEBOUNCE_BTNS/flipflops_1" BEL
+        "GPIO_MODULE/DB_BTN_GEN[4].DEBOUNCE_BTNS/flipflops_0" BEL
+        "GPIO_MODULE/DB_BTN_GEN[3].DEBOUNCE_BTNS/counter_out_19" BEL
+        "GPIO_MODULE/DB_BTN_GEN[3].DEBOUNCE_BTNS/counter_out_18" BEL
+        "GPIO_MODULE/DB_BTN_GEN[3].DEBOUNCE_BTNS/counter_out_17" BEL
+        "GPIO_MODULE/DB_BTN_GEN[3].DEBOUNCE_BTNS/counter_out_16" BEL
+        "GPIO_MODULE/DB_BTN_GEN[3].DEBOUNCE_BTNS/counter_out_15" BEL
+        "GPIO_MODULE/DB_BTN_GEN[3].DEBOUNCE_BTNS/counter_out_14" BEL
+        "GPIO_MODULE/DB_BTN_GEN[3].DEBOUNCE_BTNS/counter_out_13" BEL
+        "GPIO_MODULE/DB_BTN_GEN[3].DEBOUNCE_BTNS/counter_out_12" BEL
+        "GPIO_MODULE/DB_BTN_GEN[3].DEBOUNCE_BTNS/counter_out_11" BEL
+        "GPIO_MODULE/DB_BTN_GEN[3].DEBOUNCE_BTNS/counter_out_10" BEL
+        "GPIO_MODULE/DB_BTN_GEN[3].DEBOUNCE_BTNS/counter_out_9" BEL
+        "GPIO_MODULE/DB_BTN_GEN[3].DEBOUNCE_BTNS/counter_out_8" BEL
+        "GPIO_MODULE/DB_BTN_GEN[3].DEBOUNCE_BTNS/counter_out_7" BEL
+        "GPIO_MODULE/DB_BTN_GEN[3].DEBOUNCE_BTNS/counter_out_6" BEL
+        "GPIO_MODULE/DB_BTN_GEN[3].DEBOUNCE_BTNS/counter_out_5" BEL
+        "GPIO_MODULE/DB_BTN_GEN[3].DEBOUNCE_BTNS/counter_out_4" BEL
+        "GPIO_MODULE/DB_BTN_GEN[3].DEBOUNCE_BTNS/counter_out_3" BEL
+        "GPIO_MODULE/DB_BTN_GEN[3].DEBOUNCE_BTNS/counter_out_2" BEL
+        "GPIO_MODULE/DB_BTN_GEN[3].DEBOUNCE_BTNS/counter_out_1" BEL
+        "GPIO_MODULE/DB_BTN_GEN[3].DEBOUNCE_BTNS/counter_out_0" BEL
+        "GPIO_MODULE/DB_BTN_GEN[3].DEBOUNCE_BTNS/flipflops_1" BEL
+        "GPIO_MODULE/DB_BTN_GEN[3].DEBOUNCE_BTNS/flipflops_0" BEL
+        "GPIO_MODULE/DB_BTN_GEN[2].DEBOUNCE_BTNS/counter_out_19" BEL
+        "GPIO_MODULE/DB_BTN_GEN[2].DEBOUNCE_BTNS/counter_out_18" BEL
+        "GPIO_MODULE/DB_BTN_GEN[2].DEBOUNCE_BTNS/counter_out_17" BEL
+        "GPIO_MODULE/DB_BTN_GEN[2].DEBOUNCE_BTNS/counter_out_16" BEL
+        "GPIO_MODULE/DB_BTN_GEN[2].DEBOUNCE_BTNS/counter_out_15" BEL
+        "GPIO_MODULE/DB_BTN_GEN[2].DEBOUNCE_BTNS/counter_out_14" BEL
+        "GPIO_MODULE/DB_BTN_GEN[2].DEBOUNCE_BTNS/counter_out_13" BEL
+        "GPIO_MODULE/DB_BTN_GEN[2].DEBOUNCE_BTNS/counter_out_12" BEL
+        "GPIO_MODULE/DB_BTN_GEN[2].DEBOUNCE_BTNS/counter_out_11" BEL
+        "GPIO_MODULE/DB_BTN_GEN[2].DEBOUNCE_BTNS/counter_out_10" BEL
+        "GPIO_MODULE/DB_BTN_GEN[2].DEBOUNCE_BTNS/counter_out_9" BEL
+        "GPIO_MODULE/DB_BTN_GEN[2].DEBOUNCE_BTNS/counter_out_8" BEL
+        "GPIO_MODULE/DB_BTN_GEN[2].DEBOUNCE_BTNS/counter_out_7" BEL
+        "GPIO_MODULE/DB_BTN_GEN[2].DEBOUNCE_BTNS/counter_out_6" BEL
+        "GPIO_MODULE/DB_BTN_GEN[2].DEBOUNCE_BTNS/counter_out_5" BEL
+        "GPIO_MODULE/DB_BTN_GEN[2].DEBOUNCE_BTNS/counter_out_4" BEL
+        "GPIO_MODULE/DB_BTN_GEN[2].DEBOUNCE_BTNS/counter_out_3" BEL
+        "GPIO_MODULE/DB_BTN_GEN[2].DEBOUNCE_BTNS/counter_out_2" BEL
+        "GPIO_MODULE/DB_BTN_GEN[2].DEBOUNCE_BTNS/counter_out_1" BEL
+        "GPIO_MODULE/DB_BTN_GEN[2].DEBOUNCE_BTNS/counter_out_0" BEL
+        "GPIO_MODULE/DB_BTN_GEN[2].DEBOUNCE_BTNS/flipflops_1" BEL
+        "GPIO_MODULE/DB_BTN_GEN[2].DEBOUNCE_BTNS/flipflops_0" BEL
+        "GPIO_MODULE/DB_BTN_GEN[1].DEBOUNCE_BTNS/counter_out_19" BEL
+        "GPIO_MODULE/DB_BTN_GEN[1].DEBOUNCE_BTNS/counter_out_18" BEL
+        "GPIO_MODULE/DB_BTN_GEN[1].DEBOUNCE_BTNS/counter_out_17" BEL
+        "GPIO_MODULE/DB_BTN_GEN[1].DEBOUNCE_BTNS/counter_out_16" BEL
+        "GPIO_MODULE/DB_BTN_GEN[1].DEBOUNCE_BTNS/counter_out_15" BEL
+        "GPIO_MODULE/DB_BTN_GEN[1].DEBOUNCE_BTNS/counter_out_14" BEL
+        "GPIO_MODULE/DB_BTN_GEN[1].DEBOUNCE_BTNS/counter_out_13" BEL
+        "GPIO_MODULE/DB_BTN_GEN[1].DEBOUNCE_BTNS/counter_out_12" BEL
+        "GPIO_MODULE/DB_BTN_GEN[1].DEBOUNCE_BTNS/counter_out_11" BEL
+        "GPIO_MODULE/DB_BTN_GEN[1].DEBOUNCE_BTNS/counter_out_10" BEL
+        "GPIO_MODULE/DB_BTN_GEN[1].DEBOUNCE_BTNS/counter_out_9" BEL
+        "GPIO_MODULE/DB_BTN_GEN[1].DEBOUNCE_BTNS/counter_out_8" BEL
+        "GPIO_MODULE/DB_BTN_GEN[1].DEBOUNCE_BTNS/counter_out_7" BEL
+        "GPIO_MODULE/DB_BTN_GEN[1].DEBOUNCE_BTNS/counter_out_6" BEL
+        "GPIO_MODULE/DB_BTN_GEN[1].DEBOUNCE_BTNS/counter_out_5" BEL
+        "GPIO_MODULE/DB_BTN_GEN[1].DEBOUNCE_BTNS/counter_out_4" BEL
+        "GPIO_MODULE/DB_BTN_GEN[1].DEBOUNCE_BTNS/counter_out_3" BEL
+        "GPIO_MODULE/DB_BTN_GEN[1].DEBOUNCE_BTNS/counter_out_2" BEL
+        "GPIO_MODULE/DB_BTN_GEN[1].DEBOUNCE_BTNS/counter_out_1" BEL
+        "GPIO_MODULE/DB_BTN_GEN[1].DEBOUNCE_BTNS/counter_out_0" BEL
+        "GPIO_MODULE/DB_BTN_GEN[1].DEBOUNCE_BTNS/flipflops_1" BEL
+        "GPIO_MODULE/DB_BTN_GEN[1].DEBOUNCE_BTNS/flipflops_0" BEL
+        "GPIO_MODULE/DB_BTN_GEN[0].DEBOUNCE_BTNS/counter_out_19" BEL
+        "GPIO_MODULE/DB_BTN_GEN[0].DEBOUNCE_BTNS/counter_out_18" BEL
+        "GPIO_MODULE/DB_BTN_GEN[0].DEBOUNCE_BTNS/counter_out_17" BEL
+        "GPIO_MODULE/DB_BTN_GEN[0].DEBOUNCE_BTNS/counter_out_16" BEL
+        "GPIO_MODULE/DB_BTN_GEN[0].DEBOUNCE_BTNS/counter_out_15" BEL
+        "GPIO_MODULE/DB_BTN_GEN[0].DEBOUNCE_BTNS/counter_out_14" BEL
+        "GPIO_MODULE/DB_BTN_GEN[0].DEBOUNCE_BTNS/counter_out_13" BEL
+        "GPIO_MODULE/DB_BTN_GEN[0].DEBOUNCE_BTNS/counter_out_12" BEL
+        "GPIO_MODULE/DB_BTN_GEN[0].DEBOUNCE_BTNS/counter_out_11" BEL
+        "GPIO_MODULE/DB_BTN_GEN[0].DEBOUNCE_BTNS/counter_out_10" BEL
+        "GPIO_MODULE/DB_BTN_GEN[0].DEBOUNCE_BTNS/counter_out_9" BEL
+        "GPIO_MODULE/DB_BTN_GEN[0].DEBOUNCE_BTNS/counter_out_8" BEL
+        "GPIO_MODULE/DB_BTN_GEN[0].DEBOUNCE_BTNS/counter_out_7" BEL
+        "GPIO_MODULE/DB_BTN_GEN[0].DEBOUNCE_BTNS/counter_out_6" BEL
+        "GPIO_MODULE/DB_BTN_GEN[0].DEBOUNCE_BTNS/counter_out_5" BEL
+        "GPIO_MODULE/DB_BTN_GEN[0].DEBOUNCE_BTNS/counter_out_4" BEL
+        "GPIO_MODULE/DB_BTN_GEN[0].DEBOUNCE_BTNS/counter_out_3" BEL
+        "GPIO_MODULE/DB_BTN_GEN[0].DEBOUNCE_BTNS/counter_out_2" BEL
+        "GPIO_MODULE/DB_BTN_GEN[0].DEBOUNCE_BTNS/counter_out_1" BEL
+        "GPIO_MODULE/DB_BTN_GEN[0].DEBOUNCE_BTNS/counter_out_0" BEL
+        "GPIO_MODULE/DB_BTN_GEN[0].DEBOUNCE_BTNS/flipflops_1" BEL
+        "GPIO_MODULE/DB_BTN_GEN[0].DEBOUNCE_BTNS/flipflops_0" BEL
+        "GB_MAC/bram_access_state_FSM_FFd2" BEL
+        "GB_MAC/bram_access_state_FSM_FFd3" BEL
+        "GB_MAC/bram_access_state_FSM_FFd1" BEL
+        "GB_MAC/bram_access_state_FSM_FFd4" BEL "GB_MAC/wb_data_o_15" BEL
+        "GB_MAC/wb_data_o_14" BEL "GB_MAC/wb_data_o_13" BEL
+        "GB_MAC/wb_data_o_12" BEL "GB_MAC/wb_data_o_11" BEL
+        "GB_MAC/wb_data_o_10" BEL "GB_MAC/wb_data_o_9" BEL
+        "GB_MAC/wb_data_o_8" BEL "GB_MAC/wb_data_o_7" BEL "GB_MAC/wb_data_o_6"
+        BEL "GB_MAC/wb_data_o_5" BEL "GB_MAC/wb_data_o_4" BEL
+        "GB_MAC/wb_data_o_3" BEL "GB_MAC/wb_data_o_2" BEL "GB_MAC/wb_data_o_1"
+        BEL "GB_MAC/wb_data_o_0" BEL "GB_MAC/reg_bram_rd_data_15" BEL
+        "GB_MAC/reg_bram_rd_data_14" BEL "GB_MAC/reg_bram_rd_data_13" BEL
+        "GB_MAC/reg_bram_rd_data_12" BEL "GB_MAC/reg_bram_rd_data_11" BEL
+        "GB_MAC/reg_bram_rd_data_10" BEL "GB_MAC/reg_bram_rd_data_9" BEL
+        "GB_MAC/reg_bram_rd_data_8" BEL "GB_MAC/reg_bram_rd_data_7" BEL
+        "GB_MAC/reg_bram_rd_data_6" BEL "GB_MAC/reg_bram_rd_data_5" BEL
+        "GB_MAC/reg_bram_rd_data_4" BEL "GB_MAC/reg_bram_rd_data_3" BEL
+        "GB_MAC/reg_bram_rd_data_2" BEL "GB_MAC/reg_bram_rd_data_1" BEL
+        "GB_MAC/reg_bram_rd_data_0" BEL "GB_MAC/rx_ifg_bram_enb" BEL
+        "GB_MAC/rx_bram_enb" BEL "GB_MAC/tx_bram_ena" BEL
+        "GB_MAC/tx_bram_wra_0" BEL "GB_MAC/bram_access" BEL
+        "GB_MAC/tx_bram_addra_9" BEL "GB_MAC/tx_bram_addra_8" BEL
+        "GB_MAC/tx_bram_addra_7" BEL "GB_MAC/tx_bram_addra_6" BEL
+        "GB_MAC/tx_bram_addra_5" BEL "GB_MAC/tx_bram_addra_4" BEL
+        "GB_MAC/tx_bram_addra_3" BEL "GB_MAC/tx_bram_addra_2" BEL
+        "GB_MAC/tx_bram_addra_1" BEL "GB_MAC/tx_bram_addra_0" BEL
+        "GB_MAC/tx_bram_dina_15" BEL "GB_MAC/tx_bram_dina_14" BEL
+        "GB_MAC/tx_bram_dina_13" BEL "GB_MAC/tx_bram_dina_12" BEL
+        "GB_MAC/tx_bram_dina_11" BEL "GB_MAC/tx_bram_dina_10" BEL
+        "GB_MAC/tx_bram_dina_9" BEL "GB_MAC/tx_bram_dina_8" BEL
+        "GB_MAC/tx_bram_dina_7" BEL "GB_MAC/tx_bram_dina_6" BEL
+        "GB_MAC/tx_bram_dina_5" BEL "GB_MAC/tx_bram_dina_4" BEL
+        "GB_MAC/tx_bram_dina_3" BEL "GB_MAC/tx_bram_dina_2" BEL
+        "GB_MAC/tx_bram_dina_1" BEL "GB_MAC/tx_bram_dina_0" BEL
+        "GB_MAC/reg_mac_cntrl_1" BEL "GB_MAC/reg_mac_cntrl_3" BEL
+        "GB_MAC/reg_mac_cntrl_0" BEL "GB_MAC/reg_bram_address_9" BEL
+        "GB_MAC/reg_bram_address_8" BEL "GB_MAC/reg_bram_address_7" BEL
+        "GB_MAC/reg_bram_address_6" BEL "GB_MAC/reg_bram_address_5" BEL
+        "GB_MAC/reg_bram_address_4" BEL "GB_MAC/reg_bram_address_3" BEL
+        "GB_MAC/reg_bram_address_2" BEL "GB_MAC/reg_bram_address_1" BEL
+        "GB_MAC/reg_bram_address_0" BEL "GB_MAC/tx_packet_length_9" BEL
+        "GB_MAC/tx_packet_length_8" BEL "GB_MAC/tx_packet_length_7" BEL
+        "GB_MAC/tx_packet_length_6" BEL "GB_MAC/tx_packet_length_5" BEL
+        "GB_MAC/tx_packet_length_4" BEL "GB_MAC/tx_packet_length_3" BEL
+        "GB_MAC/tx_packet_length_2" BEL "GB_MAC/tx_packet_length_1" BEL
+        "GB_MAC/tx_packet_length_0" BEL "GB_MAC/reg_mac_cntrl_4" BEL
+        "GB_MAC/wb_int_ack_o" BEL "GB_MAC/reg_bram_wr_data_15" BEL
+        "GB_MAC/reg_bram_wr_data_14" BEL "GB_MAC/reg_bram_wr_data_13" BEL
+        "GB_MAC/reg_bram_wr_data_12" BEL "GB_MAC/reg_bram_wr_data_11" BEL
+        "GB_MAC/reg_bram_wr_data_10" BEL "GB_MAC/reg_bram_wr_data_9" BEL
+        "GB_MAC/reg_bram_wr_data_8" BEL "GB_MAC/reg_bram_wr_data_7" BEL
+        "GB_MAC/reg_bram_wr_data_6" BEL "GB_MAC/reg_bram_wr_data_5" BEL
+        "GB_MAC/reg_bram_wr_data_4" BEL "GB_MAC/reg_bram_wr_data_3" BEL
+        "GB_MAC/reg_bram_wr_data_2" BEL "GB_MAC/reg_bram_wr_data_1" BEL
+        "GB_MAC/reg_bram_wr_data_0" BEL "GB_MAC/tx_max_send_packets_15" BEL
+        "GB_MAC/tx_max_send_packets_14" BEL "GB_MAC/tx_max_send_packets_13"
+        BEL "GB_MAC/tx_max_send_packets_12" BEL
+        "GB_MAC/tx_max_send_packets_11" BEL "GB_MAC/tx_max_send_packets_10"
+        BEL "GB_MAC/tx_max_send_packets_9" BEL "GB_MAC/tx_max_send_packets_8"
+        BEL "GB_MAC/tx_max_send_packets_7" BEL "GB_MAC/tx_max_send_packets_6"
+        BEL "GB_MAC/tx_max_send_packets_5" BEL "GB_MAC/tx_max_send_packets_4"
+        BEL "GB_MAC/tx_max_send_packets_3" BEL "GB_MAC/tx_max_send_packets_2"
+        BEL "GB_MAC/tx_max_send_packets_1" BEL "GB_MAC/tx_max_send_packets_0"
+        BEL "GB_MAC/tx_ifg_length_15" BEL "GB_MAC/tx_ifg_length_14" BEL
+        "GB_MAC/tx_ifg_length_13" BEL "GB_MAC/tx_ifg_length_12" BEL
+        "GB_MAC/tx_ifg_length_11" BEL "GB_MAC/tx_ifg_length_10" BEL
+        "GB_MAC/tx_ifg_length_9" BEL "GB_MAC/tx_ifg_length_8" BEL
+        "GB_MAC/tx_ifg_length_7" BEL "GB_MAC/tx_ifg_length_6" BEL
+        "GB_MAC/tx_ifg_length_5" BEL "GB_MAC/tx_ifg_length_4" BEL
+        "GB_MAC/tx_ifg_length_3" BEL "GB_MAC/tx_ifg_length_2" BEL
+        "GB_MAC/tx_ifg_length_1" BEL "GB_MAC/tx_ifg_length_0" BEL
+        "UART_LINK/process_packet_state_FSM_FFd1" BEL
+        "UART_LINK/process_packet_state_FSM_FFd2" BEL
+        "UART_LINK/COM_CNTRL/BAUD_GEN/cnt2_4" BEL
+        "UART_LINK/COM_CNTRL/BAUD_GEN/cnt2_3" BEL
+        "UART_LINK/COM_CNTRL/BAUD_GEN/cnt2_2" BEL
+        "UART_LINK/COM_CNTRL/BAUD_GEN/cnt2_1" BEL
+        "UART_LINK/COM_CNTRL/BAUD_GEN/cnt2_0" BEL
+        "UART_LINK/COM_CNTRL/BAUD_GEN/cnt1_8" BEL
+        "UART_LINK/COM_CNTRL/BAUD_GEN/cnt1_7" BEL
+        "UART_LINK/COM_CNTRL/BAUD_GEN/cnt1_6" BEL
+        "UART_LINK/COM_CNTRL/BAUD_GEN/cnt1_5" BEL
+        "UART_LINK/COM_CNTRL/BAUD_GEN/cnt1_4" BEL
+        "UART_LINK/COM_CNTRL/BAUD_GEN/cnt1_3" BEL
+        "UART_LINK/COM_CNTRL/BAUD_GEN/cnt1_2" BEL
+        "UART_LINK/COM_CNTRL/BAUD_GEN/cnt1_1" BEL
+        "UART_LINK/COM_CNTRL/BAUD_GEN/cnt1_0" BEL
+        "UART_LINK/process_packet_state_FSM_FFd3" BEL
+        "UART_LINK/COM_CNTRL/BAUD_GEN/baud" BEL
+        "UART_LINK/COM_CNTRL/BAUD_GEN/baudx16" BEL
+        "UART_LINK/rx_packet_data_15" BEL "UART_LINK/rx_packet_data_14" BEL
+        "UART_LINK/rx_packet_data_13" BEL "UART_LINK/rx_packet_data_12" BEL
+        "UART_LINK/rx_packet_data_11" BEL "UART_LINK/rx_packet_data_10" BEL
+        "UART_LINK/rx_packet_data_9" BEL "UART_LINK/rx_packet_data_8" BEL
+        "UART_LINK/rx_packet_data_7" BEL "UART_LINK/rx_packet_data_6" BEL
+        "UART_LINK/rx_packet_data_5" BEL "UART_LINK/rx_packet_data_4" BEL
+        "UART_LINK/rx_packet_data_3" BEL "UART_LINK/rx_packet_data_2" BEL
+        "UART_LINK/rx_packet_data_1" BEL "UART_LINK/rx_packet_data_0" BEL
+        "UART_LINK/tx_fifo_din_7" BEL "UART_LINK/tx_fifo_din_6" BEL
+        "UART_LINK/tx_fifo_din_5" BEL "UART_LINK/tx_fifo_din_4" BEL
+        "UART_LINK/tx_fifo_din_3" BEL "UART_LINK/tx_fifo_din_2" BEL
+        "UART_LINK/tx_fifo_din_1" BEL "UART_LINK/tx_fifo_din_0" BEL
+        "UART_LINK/wb_wr_o" BEL "UART_LINK/wb_stb_o" BEL
+        "UART_LINK/rx_packet_address_7" BEL "UART_LINK/rx_packet_address_6"
+        BEL "UART_LINK/rx_packet_address_5" BEL
+        "UART_LINK/rx_packet_address_4" BEL "UART_LINK/rx_packet_address_3"
+        BEL "UART_LINK/rx_packet_address_2" BEL
+        "UART_LINK/rx_packet_address_1" BEL "UART_LINK/rx_packet_address_0"
+        BEL "UART_LINK/rx_packet_type_2" BEL "UART_LINK/rx_packet_type_1" BEL
+        "UART_LINK/rx_packet_type_0" BEL "UART_LINK/tx_packet_data_15" BEL
+        "UART_LINK/tx_packet_data_14" BEL "UART_LINK/tx_packet_data_13" BEL
+        "UART_LINK/tx_packet_data_12" BEL "UART_LINK/tx_packet_data_11" BEL
+        "UART_LINK/tx_packet_data_10" BEL "UART_LINK/tx_packet_data_9" BEL
+        "UART_LINK/tx_packet_data_8" BEL "UART_LINK/tx_packet_data_7" BEL
+        "UART_LINK/tx_packet_data_6" BEL "UART_LINK/tx_packet_data_5" BEL
+        "UART_LINK/tx_packet_data_4" BEL "UART_LINK/tx_packet_data_3" BEL
+        "UART_LINK/tx_packet_data_2" BEL "UART_LINK/tx_packet_data_1" BEL
+        "UART_LINK/tx_packet_data_0" BEL "SYNC_RST/rst_shift_reg_19" BEL
+        "SYNC_RST/rst_shift_reg_18" BEL "SYNC_RST/rst_shift_reg_17" BEL
+        "SYNC_RST/rst_shift_reg_16" BEL "SYNC_RST/rst_shift_reg_15" BEL
+        "SYNC_RST/rst_shift_reg_14" BEL "SYNC_RST/rst_shift_reg_13" BEL
+        "SYNC_RST/rst_shift_reg_12" BEL "SYNC_RST/rst_shift_reg_11" BEL
+        "SYNC_RST/rst_shift_reg_10" BEL "SYNC_RST/rst_shift_reg_9" BEL
+        "SYNC_RST/rst_shift_reg_8" BEL "SYNC_RST/rst_shift_reg_7" BEL
+        "SYNC_RST/rst_shift_reg_6" BEL "SYNC_RST/rst_shift_reg_5" BEL
+        "SYNC_RST/rst_shift_reg_4" BEL "SYNC_RST/rst_shift_reg_3" BEL
+        "SYNC_RST/rst_shift_reg_2" BEL "SYNC_RST/rst_shift_reg_1" BEL
+        "SYNC_RST/rst_shift_reg_0" BEL "LED_BLINK_MODULE/blink" BEL
+        "GB_PHY_MDIO/mdio_busy" BEL "GB_PHY_MDIO/mdio_clk_int" BEL
+        "GB_PHY_MDIO/mdio_start" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[7].DEBOUNCE_SWITCHES/sig_o" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[6].DEBOUNCE_SWITCHES/sig_o" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[5].DEBOUNCE_SWITCHES/sig_o" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[4].DEBOUNCE_SWITCHES/sig_o" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[3].DEBOUNCE_SWITCHES/sig_o" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[2].DEBOUNCE_SWITCHES/sig_o" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[1].DEBOUNCE_SWITCHES/sig_o" BEL
+        "GPIO_MODULE/DB_SWITCHES_GEN[0].DEBOUNCE_SWITCHES/sig_o" BEL
+        "GPIO_MODULE/DB_BTN_GEN[4].DEBOUNCE_BTNS/sig_o" BEL
+        "GPIO_MODULE/DB_BTN_GEN[3].DEBOUNCE_BTNS/sig_o" BEL
+        "GPIO_MODULE/DB_BTN_GEN[2].DEBOUNCE_BTNS/sig_o" BEL
+        "GPIO_MODULE/DB_BTN_GEN[1].DEBOUNCE_BTNS/sig_o" BEL
+        "GPIO_MODULE/DB_BTN_GEN[0].DEBOUNCE_BTNS/sig_o" BEL
+        "GB_MAC/bram_access_busy" BEL "UART_LINK/tx_fifo_wr_en" BEL
+        "UART_LINK/PROCESS_PACKET.wr_data_hi" BEL "UART_LINK/rx_fifo_rd_en"
+        BEL "UART_LINK/PROCESS_PACKET.rd_data_hi" BEL
+        "GB_PHY_MDIO/mdio_clk_int_dly" BEL "GB_MAC/reg_mac_cntrl_5" BEL
+        "UART_LINK/rx_packet_address_2_1" BEL
+        "GB_PHY_MDIO/MDIO_INTERFACE.bitpos_0_1" BEL
+        "GB_PHY_MDIO/MDIO_INTERFACE.bitpos_2_1" BEL
+        "UART_LINK/rx_packet_address_3_1" BEL
+        "UART_LINK/rx_packet_address_4_1" BEL
+        "GB_PHY_MDIO/MDIO_INTERFACE.bitpos_1_1" BEL
+        "GB_PHY_MDIO/MDIO_INTERFACE.bitpos_0_2" BEL
+        "GB_PHY_MDIO/MDIO_INTERFACE.bitpos_2_2" BEL
+        "GB_PHY_MDIO/MDIO_INTERFACE.bitpos_3_1" BEL "UART_LINK/wb_wr_o_1" BEL
+        "GB_PHY_MDIO/mdio_int_o" PIN
+        "GB_MAC/TX_BRAM_DATA/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram_pins<28>"
+        PIN
+        "GB_MAC/RX_BRAM_DATA/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SDP.SIMPLE_PRIM18.ram_pins<29>"
+        PIN
+        "GB_MAC/RX_IFG_BRAM_DATA/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SDP.SIMPLE_PRIM18.ram_pins<29>"
+        BEL
+        "UART_LINK/COM_CNTRL/TX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i"
+        BEL
+        "UART_LINK/COM_CNTRL/TX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i"
+        BEL
+        "UART_LINK/COM_CNTRL/TX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/RST_FULL_GEN"
+        BEL
+        "UART_LINK/COM_CNTRL/TX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_asreg"
+        BEL
+        "UART_LINK/COM_CNTRL/TX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.rst_d3"
+        BEL
+        "UART_LINK/COM_CNTRL/TX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_asreg_d2"
+        BEL
+        "UART_LINK/COM_CNTRL/TX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.rst_d2"
+        BEL
+        "UART_LINK/COM_CNTRL/TX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1"
+        BEL
+        "UART_LINK/COM_CNTRL/TX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0"
+        BEL
+        "UART_LINK/COM_CNTRL/TX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_asreg_d1"
+        BEL
+        "UART_LINK/COM_CNTRL/TX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.rst_d1"
+        BEL
+        "UART_LINK/COM_CNTRL/TX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_3"
+        BEL
+        "UART_LINK/COM_CNTRL/TX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_2"
+        BEL
+        "UART_LINK/COM_CNTRL/TX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_1"
+        BEL
+        "UART_LINK/COM_CNTRL/TX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d1_3"
+        BEL
+        "UART_LINK/COM_CNTRL/TX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d1_2"
+        BEL
+        "UART_LINK/COM_CNTRL/TX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d1_1"
+        BEL
+        "UART_LINK/COM_CNTRL/TX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d1_0"
+        BEL
+        "UART_LINK/COM_CNTRL/TX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_3"
+        BEL
+        "UART_LINK/COM_CNTRL/TX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_2"
+        BEL
+        "UART_LINK/COM_CNTRL/TX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_1"
+        BEL
+        "UART_LINK/COM_CNTRL/TX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_0"
+        BEL
+        "UART_LINK/COM_CNTRL/TX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_1"
+        BEL
+        "UART_LINK/COM_CNTRL/TX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_2"
+        BEL
+        "UART_LINK/COM_CNTRL/TX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_3"
+        BEL
+        "UART_LINK/COM_CNTRL/TX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/Q_0"
+        BEL
+        "UART_LINK/COM_CNTRL/TX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/Q_1"
+        BEL
+        "UART_LINK/COM_CNTRL/TX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/Q_2"
+        BEL
+        "UART_LINK/COM_CNTRL/TX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/Q_3"
+        BEL
+        "UART_LINK/COM_CNTRL/TX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_bin_3"
+        BEL
+        "UART_LINK/COM_CNTRL/TX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_bin_2"
+        BEL
+        "UART_LINK/COM_CNTRL/TX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_bin_1"
+        BEL
+        "UART_LINK/COM_CNTRL/TX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_bin_0"
+        BEL
+        "UART_LINK/COM_CNTRL/TX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc_3"
+        BEL
+        "UART_LINK/COM_CNTRL/TX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc_2"
+        BEL
+        "UART_LINK/COM_CNTRL/TX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc_1"
+        BEL
+        "UART_LINK/COM_CNTRL/TX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc_0"
+        BEL
+        "UART_LINK/COM_CNTRL/RX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i"
+        BEL
+        "UART_LINK/COM_CNTRL/RX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i"
+        BEL
+        "UART_LINK/COM_CNTRL/RX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grhf.rhf/ram_valid_d1"
+        BEL
+        "UART_LINK/COM_CNTRL/RX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg"
+        BEL
+        "UART_LINK/COM_CNTRL/RX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg_d2"
+        BEL
+        "UART_LINK/COM_CNTRL/RX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2"
+        BEL
+        "UART_LINK/COM_CNTRL/RX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1"
+        BEL
+        "UART_LINK/COM_CNTRL/RX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0"
+        BEL
+        "UART_LINK/COM_CNTRL/RX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg_d1"
+        BEL
+        "UART_LINK/COM_CNTRL/RX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_3"
+        BEL
+        "UART_LINK/COM_CNTRL/RX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_2"
+        BEL
+        "UART_LINK/COM_CNTRL/RX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_1"
+        BEL
+        "UART_LINK/COM_CNTRL/RX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_3"
+        BEL
+        "UART_LINK/COM_CNTRL/RX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_2"
+        BEL
+        "UART_LINK/COM_CNTRL/RX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_1"
+        BEL
+        "UART_LINK/COM_CNTRL/RX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_0"
+        BEL
+        "UART_LINK/COM_CNTRL/RX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_0"
+        BEL
+        "UART_LINK/COM_CNTRL/RX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_1"
+        BEL
+        "UART_LINK/COM_CNTRL/RX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_2"
+        BEL
+        "UART_LINK/COM_CNTRL/RX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_3"
+        BEL
+        "UART_LINK/COM_CNTRL/RX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_0"
+        BEL
+        "UART_LINK/COM_CNTRL/RX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_1"
+        BEL
+        "UART_LINK/COM_CNTRL/RX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_2"
+        BEL
+        "UART_LINK/COM_CNTRL/RX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_3"
+        BEL
+        "UART_LINK/COM_CNTRL/RX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_bin_3"
+        BEL
+        "UART_LINK/COM_CNTRL/RX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_bin_2"
+        BEL
+        "UART_LINK/COM_CNTRL/RX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_bin_1"
+        BEL
+        "UART_LINK/COM_CNTRL/RX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_bin_0"
+        BEL
+        "UART_LINK/COM_CNTRL/RX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc_3"
+        BEL
+        "UART_LINK/COM_CNTRL/RX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc_2"
+        BEL
+        "UART_LINK/COM_CNTRL/RX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc_1"
+        BEL
+        "UART_LINK/COM_CNTRL/RX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc_0"
+        PIN
+        "UART_LINK/COM_CNTRL/RX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.WIDE_PRIM9.ram_pins<29>"
+        PIN
+        "UART_LINK/COM_CNTRL/TX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.WIDE_PRIM9.ram_pins<28>";
+PIN
+        GB_MAC/TX_BRAM_DATA/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram_pins<29>
+        = BEL
+        "GB_MAC/TX_BRAM_DATA/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram"
+        PINNAME CLKB;
+PIN GB_MAC/GB_PHY_GMII/gmii_tx_clk_ddr_iob_pins<1> = BEL
+        "GB_MAC/GB_PHY_GMII/gmii_tx_clk_ddr_iob" PINNAME CK0;
+PIN GB_MAC/GB_PHY_GMII/gmii_tx_clk_ddr_iob_pins<2> = BEL
+        "GB_MAC/GB_PHY_GMII/gmii_tx_clk_ddr_iob" PINNAME CK1;
+TIMEGRP DSM0_clkout1 = BEL "DSM0/clkout2_buf" BEL
+        "GB_MAC/GB_TX_FSM.tx_addr_10" BEL "GB_MAC/GB_TX_FSM.tx_addr_9" BEL
+        "GB_MAC/GB_TX_FSM.tx_addr_8" BEL "GB_MAC/GB_TX_FSM.tx_addr_7" BEL
+        "GB_MAC/GB_TX_FSM.tx_addr_6" BEL "GB_MAC/GB_TX_FSM.tx_addr_5" BEL
+        "GB_MAC/GB_TX_FSM.tx_addr_4" BEL "GB_MAC/GB_TX_FSM.tx_addr_3" BEL
+        "GB_MAC/GB_TX_FSM.tx_addr_2" BEL "GB_MAC/GB_TX_FSM.tx_addr_1" BEL
+        "GB_MAC/GB_TX_FSM.tx_addr_0" BEL "GB_MAC/tx_state_FSM_FFd1" BEL
+        "GB_MAC/tx_state_FSM_FFd2" BEL "GB_MAC/txd_from_mac_7" BEL
+        "GB_MAC/txd_from_mac_6" BEL "GB_MAC/txd_from_mac_5" BEL
+        "GB_MAC/txd_from_mac_4" BEL "GB_MAC/txd_from_mac_3" BEL
+        "GB_MAC/txd_from_mac_2" BEL "GB_MAC/txd_from_mac_1" BEL
+        "GB_MAC/txd_from_mac_0" BEL "GB_MAC/tx_en_from_mac_pipe_2" BEL
+        "GB_MAC/tx_en_from_mac_pipe_1" BEL "GB_MAC/tx_en_from_mac_pipe_0" BEL
+        "GB_MAC/tx_bram_addrb_10" BEL "GB_MAC/tx_bram_addrb_9" BEL
+        "GB_MAC/tx_bram_addrb_8" BEL "GB_MAC/tx_bram_addrb_7" BEL
+        "GB_MAC/tx_bram_addrb_6" BEL "GB_MAC/tx_bram_addrb_5" BEL
+        "GB_MAC/tx_bram_addrb_4" BEL "GB_MAC/tx_bram_addrb_3" BEL
+        "GB_MAC/tx_bram_addrb_2" BEL "GB_MAC/tx_bram_addrb_1" BEL
+        "GB_MAC/tx_bram_addrb_0" BEL "GB_MAC/tx_bram_enb" BEL
+        "GB_MAC/GB_TX_FSM.tx_bytepos_9" BEL "GB_MAC/GB_TX_FSM.tx_bytepos_8"
+        BEL "GB_MAC/GB_TX_FSM.tx_bytepos_7" BEL
+        "GB_MAC/GB_TX_FSM.tx_bytepos_6" BEL "GB_MAC/GB_TX_FSM.tx_bytepos_5"
+        BEL "GB_MAC/GB_TX_FSM.tx_bytepos_4" BEL
+        "GB_MAC/GB_TX_FSM.tx_bytepos_3" BEL "GB_MAC/GB_TX_FSM.tx_bytepos_2"
+        BEL "GB_MAC/GB_TX_FSM.tx_bytepos_1" BEL
+        "GB_MAC/GB_TX_FSM.tx_bytepos_0" BEL "GB_MAC/GB_TX_FSM.tx_ifgpos_15"
+        BEL "GB_MAC/GB_TX_FSM.tx_ifgpos_14" BEL
+        "GB_MAC/GB_TX_FSM.tx_ifgpos_13" BEL "GB_MAC/GB_TX_FSM.tx_ifgpos_12"
+        BEL "GB_MAC/GB_TX_FSM.tx_ifgpos_11" BEL
+        "GB_MAC/GB_TX_FSM.tx_ifgpos_10" BEL "GB_MAC/GB_TX_FSM.tx_ifgpos_9" BEL
+        "GB_MAC/GB_TX_FSM.tx_ifgpos_8" BEL "GB_MAC/GB_TX_FSM.tx_ifgpos_7" BEL
+        "GB_MAC/GB_TX_FSM.tx_ifgpos_6" BEL "GB_MAC/GB_TX_FSM.tx_ifgpos_5" BEL
+        "GB_MAC/GB_TX_FSM.tx_ifgpos_4" BEL "GB_MAC/GB_TX_FSM.tx_ifgpos_3" BEL
+        "GB_MAC/GB_TX_FSM.tx_ifgpos_2" BEL "GB_MAC/GB_TX_FSM.tx_ifgpos_1" BEL
+        "GB_MAC/GB_TX_FSM.tx_ifgpos_0" BEL "GB_MAC/tx_packets_sent_63" BEL
+        "GB_MAC/tx_packets_sent_62" BEL "GB_MAC/tx_packets_sent_61" BEL
+        "GB_MAC/tx_packets_sent_60" BEL "GB_MAC/tx_packets_sent_59" BEL
+        "GB_MAC/tx_packets_sent_58" BEL "GB_MAC/tx_packets_sent_57" BEL
+        "GB_MAC/tx_packets_sent_56" BEL "GB_MAC/tx_packets_sent_55" BEL
+        "GB_MAC/tx_packets_sent_54" BEL "GB_MAC/tx_packets_sent_53" BEL
+        "GB_MAC/tx_packets_sent_52" BEL "GB_MAC/tx_packets_sent_51" BEL
+        "GB_MAC/tx_packets_sent_50" BEL "GB_MAC/tx_packets_sent_49" BEL
+        "GB_MAC/tx_packets_sent_48" BEL "GB_MAC/tx_packets_sent_47" BEL
+        "GB_MAC/tx_packets_sent_46" BEL "GB_MAC/tx_packets_sent_45" BEL
+        "GB_MAC/tx_packets_sent_44" BEL "GB_MAC/tx_packets_sent_43" BEL
+        "GB_MAC/tx_packets_sent_42" BEL "GB_MAC/tx_packets_sent_41" BEL
+        "GB_MAC/tx_packets_sent_40" BEL "GB_MAC/tx_packets_sent_39" BEL
+        "GB_MAC/tx_packets_sent_38" BEL "GB_MAC/tx_packets_sent_37" BEL
+        "GB_MAC/tx_packets_sent_36" BEL "GB_MAC/tx_packets_sent_35" BEL
+        "GB_MAC/tx_packets_sent_34" BEL "GB_MAC/tx_packets_sent_33" BEL
+        "GB_MAC/tx_packets_sent_32" BEL "GB_MAC/tx_packets_sent_31" BEL
+        "GB_MAC/tx_packets_sent_30" BEL "GB_MAC/tx_packets_sent_29" BEL
+        "GB_MAC/tx_packets_sent_28" BEL "GB_MAC/tx_packets_sent_27" BEL
+        "GB_MAC/tx_packets_sent_26" BEL "GB_MAC/tx_packets_sent_25" BEL
+        "GB_MAC/tx_packets_sent_24" BEL "GB_MAC/tx_packets_sent_23" BEL
+        "GB_MAC/tx_packets_sent_22" BEL "GB_MAC/tx_packets_sent_21" BEL
+        "GB_MAC/tx_packets_sent_20" BEL "GB_MAC/tx_packets_sent_19" BEL
+        "GB_MAC/tx_packets_sent_18" BEL "GB_MAC/tx_packets_sent_17" BEL
+        "GB_MAC/tx_packets_sent_16" BEL "GB_MAC/tx_packets_sent_15" BEL
+        "GB_MAC/tx_packets_sent_14" BEL "GB_MAC/tx_packets_sent_13" BEL
+        "GB_MAC/tx_packets_sent_12" BEL "GB_MAC/tx_packets_sent_11" BEL
+        "GB_MAC/tx_packets_sent_10" BEL "GB_MAC/tx_packets_sent_9" BEL
+        "GB_MAC/tx_packets_sent_8" BEL "GB_MAC/tx_packets_sent_7" BEL
+        "GB_MAC/tx_packets_sent_6" BEL "GB_MAC/tx_packets_sent_5" BEL
+        "GB_MAC/tx_packets_sent_4" BEL "GB_MAC/tx_packets_sent_3" BEL
+        "GB_MAC/tx_packets_sent_2" BEL "GB_MAC/tx_packets_sent_1" BEL
+        "GB_MAC/tx_packets_sent_0" BEL "GB_MAC/GB_TX_FSM.packets_sent_63" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_62" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_61" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_60" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_59" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_58" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_57" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_56" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_55" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_54" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_53" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_52" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_51" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_50" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_49" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_48" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_47" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_46" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_45" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_44" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_43" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_42" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_41" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_40" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_39" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_38" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_37" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_36" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_35" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_34" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_33" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_32" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_31" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_30" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_29" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_28" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_27" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_26" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_25" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_24" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_23" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_22" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_21" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_20" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_19" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_18" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_17" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_16" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_15" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_14" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_13" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_12" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_11" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_10" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_9" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_8" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_7" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_6" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_5" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_4" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_3" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_2" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_1" BEL
+        "GB_MAC/GB_TX_FSM.packets_sent_0" BEL
+        "GB_MAC/tx_packet_generator_en_dly" BEL
+        "GB_MAC/GB_PHY_GMII/gmii_tx_en" BEL "GB_MAC/GB_PHY_GMII/gmii_txd_7"
+        BEL "GB_MAC/GB_PHY_GMII/gmii_txd_6" BEL
+        "GB_MAC/GB_PHY_GMII/gmii_txd_5" BEL "GB_MAC/GB_PHY_GMII/gmii_txd_4"
+        BEL "GB_MAC/GB_PHY_GMII/gmii_txd_3" BEL
+        "GB_MAC/GB_PHY_GMII/gmii_txd_2" BEL "GB_MAC/GB_PHY_GMII/gmii_txd_1"
+        BEL "GB_MAC/GB_PHY_GMII/gmii_txd_0" BEL "GB_MAC/tx_en_from_mac" BEL
+        "GB_MAC/tx_state_FSM_FFd1_1" PIN
+        "GB_MAC/TX_BRAM_DATA/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram_pins<29>"
+        PIN "GB_MAC/GB_PHY_GMII/gmii_tx_clk_ddr_iob_pins<1>" PIN
+        "GB_MAC/GB_PHY_GMII/gmii_tx_clk_ddr_iob_pins<2>" PIN
+        "GB_MAC/GB_PHY_GMII/gmii_tx_clk_ddr_iob_pins<1>" PIN
+        "GB_MAC/GB_PHY_GMII/gmii_tx_clk_ddr_iob_pins<2>";
+PIN
+        GB_MAC/RX_BRAM_DATA/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SDP.SIMPLE_PRIM18.ram_pins<28>
+        = BEL
+        "GB_MAC/RX_BRAM_DATA/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SDP.SIMPLE_PRIM18.ram"
+        PINNAME CLKA;
+PIN
+        GB_MAC/RX_IFG_BRAM_DATA/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SDP.SIMPLE_PRIM18.ram_pins<28>
+        = BEL
+        "GB_MAC/RX_IFG_BRAM_DATA/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SDP.SIMPLE_PRIM18.ram"
+        PINNAME CLKA;
+TIMEGRP GB_MAC_GB_PHY_GMII_gmii_rx_clk_tobufg = BEL
+        "GB_MAC/GB_RX_FSM.packets_received_63" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_62" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_61" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_60" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_59" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_58" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_57" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_56" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_55" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_54" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_53" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_52" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_51" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_50" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_49" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_48" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_47" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_46" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_45" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_44" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_43" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_42" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_41" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_40" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_39" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_38" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_37" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_36" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_35" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_34" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_33" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_32" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_31" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_30" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_29" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_28" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_27" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_26" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_25" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_24" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_23" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_22" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_21" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_20" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_19" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_18" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_17" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_16" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_15" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_14" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_13" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_12" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_11" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_10" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_9" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_8" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_7" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_6" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_5" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_4" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_3" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_2" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_1" BEL
+        "GB_MAC/GB_RX_FSM.packets_received_0" BEL
+        "GB_MAC/GB_RX_FSM.rx_addr_10" BEL "GB_MAC/GB_RX_FSM.rx_addr_9" BEL
+        "GB_MAC/GB_RX_FSM.rx_addr_8" BEL "GB_MAC/GB_RX_FSM.rx_addr_7" BEL
+        "GB_MAC/GB_RX_FSM.rx_addr_6" BEL "GB_MAC/GB_RX_FSM.rx_addr_5" BEL
+        "GB_MAC/GB_RX_FSM.rx_addr_4" BEL "GB_MAC/GB_RX_FSM.rx_addr_3" BEL
+        "GB_MAC/GB_RX_FSM.rx_addr_2" BEL "GB_MAC/GB_RX_FSM.rx_addr_1" BEL
+        "GB_MAC/GB_RX_FSM.rx_addr_0" BEL "GB_MAC/rx_state_FSM_FFd1" BEL
+        "GB_MAC/rx_state_FSM_FFd2" BEL "GB_MAC/rx_ifg_bram_dina_15" BEL
+        "GB_MAC/rx_ifg_bram_dina_14" BEL "GB_MAC/rx_ifg_bram_dina_13" BEL
+        "GB_MAC/rx_ifg_bram_dina_12" BEL "GB_MAC/rx_ifg_bram_dina_11" BEL
+        "GB_MAC/rx_ifg_bram_dina_10" BEL "GB_MAC/rx_ifg_bram_dina_9" BEL
+        "GB_MAC/rx_ifg_bram_dina_8" BEL "GB_MAC/rx_ifg_bram_dina_7" BEL
+        "GB_MAC/rx_ifg_bram_dina_6" BEL "GB_MAC/rx_ifg_bram_dina_5" BEL
+        "GB_MAC/rx_ifg_bram_dina_4" BEL "GB_MAC/rx_ifg_bram_dina_3" BEL
+        "GB_MAC/rx_ifg_bram_dina_2" BEL "GB_MAC/rx_ifg_bram_dina_1" BEL
+        "GB_MAC/rx_ifg_bram_dina_0" BEL "GB_MAC/GB_RX_FSM.rx_ifg_cnt_15" BEL
+        "GB_MAC/GB_RX_FSM.rx_ifg_cnt_14" BEL "GB_MAC/GB_RX_FSM.rx_ifg_cnt_13"
+        BEL "GB_MAC/GB_RX_FSM.rx_ifg_cnt_12" BEL
+        "GB_MAC/GB_RX_FSM.rx_ifg_cnt_11" BEL "GB_MAC/GB_RX_FSM.rx_ifg_cnt_10"
+        BEL "GB_MAC/GB_RX_FSM.rx_ifg_cnt_9" BEL
+        "GB_MAC/GB_RX_FSM.rx_ifg_cnt_8" BEL "GB_MAC/GB_RX_FSM.rx_ifg_cnt_7"
+        BEL "GB_MAC/GB_RX_FSM.rx_ifg_cnt_6" BEL
+        "GB_MAC/GB_RX_FSM.rx_ifg_cnt_5" BEL "GB_MAC/GB_RX_FSM.rx_ifg_cnt_4"
+        BEL "GB_MAC/GB_RX_FSM.rx_ifg_cnt_3" BEL
+        "GB_MAC/GB_RX_FSM.rx_ifg_cnt_2" BEL "GB_MAC/GB_RX_FSM.rx_ifg_cnt_1"
+        BEL "GB_MAC/GB_RX_FSM.rx_ifg_cnt_0" BEL "GB_MAC/rx_ifg_bram_addra_9"
+        BEL "GB_MAC/rx_ifg_bram_addra_8" BEL "GB_MAC/rx_ifg_bram_addra_7" BEL
+        "GB_MAC/rx_ifg_bram_addra_6" BEL "GB_MAC/rx_ifg_bram_addra_5" BEL
+        "GB_MAC/rx_ifg_bram_addra_4" BEL "GB_MAC/rx_ifg_bram_addra_3" BEL
+        "GB_MAC/rx_ifg_bram_addra_2" BEL "GB_MAC/rx_ifg_bram_addra_1" BEL
+        "GB_MAC/rx_ifg_bram_addra_0" BEL "GB_MAC/rx_bram_wra_0" BEL
+        "GB_MAC/rx_packets_received_63" BEL "GB_MAC/rx_packets_received_62"
+        BEL "GB_MAC/rx_packets_received_61" BEL
+        "GB_MAC/rx_packets_received_60" BEL "GB_MAC/rx_packets_received_59"
+        BEL "GB_MAC/rx_packets_received_58" BEL
+        "GB_MAC/rx_packets_received_57" BEL "GB_MAC/rx_packets_received_56"
+        BEL "GB_MAC/rx_packets_received_55" BEL
+        "GB_MAC/rx_packets_received_54" BEL "GB_MAC/rx_packets_received_53"
+        BEL "GB_MAC/rx_packets_received_52" BEL
+        "GB_MAC/rx_packets_received_51" BEL "GB_MAC/rx_packets_received_50"
+        BEL "GB_MAC/rx_packets_received_49" BEL
+        "GB_MAC/rx_packets_received_48" BEL "GB_MAC/rx_packets_received_47"
+        BEL "GB_MAC/rx_packets_received_46" BEL
+        "GB_MAC/rx_packets_received_45" BEL "GB_MAC/rx_packets_received_44"
+        BEL "GB_MAC/rx_packets_received_43" BEL
+        "GB_MAC/rx_packets_received_42" BEL "GB_MAC/rx_packets_received_41"
+        BEL "GB_MAC/rx_packets_received_40" BEL
+        "GB_MAC/rx_packets_received_39" BEL "GB_MAC/rx_packets_received_38"
+        BEL "GB_MAC/rx_packets_received_37" BEL
+        "GB_MAC/rx_packets_received_36" BEL "GB_MAC/rx_packets_received_35"
+        BEL "GB_MAC/rx_packets_received_34" BEL
+        "GB_MAC/rx_packets_received_33" BEL "GB_MAC/rx_packets_received_32"
+        BEL "GB_MAC/rx_packets_received_31" BEL
+        "GB_MAC/rx_packets_received_30" BEL "GB_MAC/rx_packets_received_29"
+        BEL "GB_MAC/rx_packets_received_28" BEL
+        "GB_MAC/rx_packets_received_27" BEL "GB_MAC/rx_packets_received_26"
+        BEL "GB_MAC/rx_packets_received_25" BEL
+        "GB_MAC/rx_packets_received_24" BEL "GB_MAC/rx_packets_received_23"
+        BEL "GB_MAC/rx_packets_received_22" BEL
+        "GB_MAC/rx_packets_received_21" BEL "GB_MAC/rx_packets_received_20"
+        BEL "GB_MAC/rx_packets_received_19" BEL
+        "GB_MAC/rx_packets_received_18" BEL "GB_MAC/rx_packets_received_17"
+        BEL "GB_MAC/rx_packets_received_16" BEL
+        "GB_MAC/rx_packets_received_15" BEL "GB_MAC/rx_packets_received_14"
+        BEL "GB_MAC/rx_packets_received_13" BEL
+        "GB_MAC/rx_packets_received_12" BEL "GB_MAC/rx_packets_received_11"
+        BEL "GB_MAC/rx_packets_received_10" BEL "GB_MAC/rx_packets_received_9"
+        BEL "GB_MAC/rx_packets_received_8" BEL "GB_MAC/rx_packets_received_7"
+        BEL "GB_MAC/rx_packets_received_6" BEL "GB_MAC/rx_packets_received_5"
+        BEL "GB_MAC/rx_packets_received_4" BEL "GB_MAC/rx_packets_received_3"
+        BEL "GB_MAC/rx_packets_received_2" BEL "GB_MAC/rx_packets_received_1"
+        BEL "GB_MAC/rx_packets_received_0" BEL "GB_MAC/rx_bram_addra_10" BEL
+        "GB_MAC/rx_bram_addra_9" BEL "GB_MAC/rx_bram_addra_8" BEL
+        "GB_MAC/rx_bram_addra_7" BEL "GB_MAC/rx_bram_addra_6" BEL
+        "GB_MAC/rx_bram_addra_5" BEL "GB_MAC/rx_bram_addra_4" BEL
+        "GB_MAC/rx_bram_addra_3" BEL "GB_MAC/rx_bram_addra_2" BEL
+        "GB_MAC/rx_bram_addra_1" BEL "GB_MAC/rx_bram_addra_0" BEL
+        "GB_MAC/rx_ifg_bram_wra_0" BEL "GB_MAC/rx_packet_generator_en_dly" BEL
+        "GB_MAC/rx_bram_dina_7" BEL "GB_MAC/rx_bram_dina_6" BEL
+        "GB_MAC/rx_bram_dina_5" BEL "GB_MAC/rx_bram_dina_4" BEL
+        "GB_MAC/rx_bram_dina_3" BEL "GB_MAC/rx_bram_dina_2" BEL
+        "GB_MAC/rx_bram_dina_1" BEL "GB_MAC/rx_bram_dina_0" BEL
+        "GB_MAC/GB_PHY_GMII/bufg_gmii_rx_clk" PIN
+        "GB_MAC/RX_BRAM_DATA/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SDP.SIMPLE_PRIM18.ram_pins<28>"
+        PIN
+        "GB_MAC/RX_IFG_BRAM_DATA/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SDP.SIMPLE_PRIM18.ram_pins<28>";
+PIN GB_MAC/GB_PHY_GMII/bufio_gmii_rx_clk_pins<1> = BEL
+        "GB_MAC/GB_PHY_GMII/bufio_gmii_rx_clk" PINNAME I;
+TIMEGRP phy_gmii_rxc = PIN "GB_MAC/GB_PHY_GMII/bufio_gmii_rx_clk_pins<1>";
+TIMEGRP GB_MAC_GB_PHY_GMII_gmii_rx_clk_bufio = BEL
+        "GB_MAC/GB_PHY_GMII/rxd_to_mac_7" BEL
+        "GB_MAC/GB_PHY_GMII/rxd_to_mac_6" BEL
+        "GB_MAC/GB_PHY_GMII/rxd_to_mac_5" BEL
+        "GB_MAC/GB_PHY_GMII/rxd_to_mac_4" BEL
+        "GB_MAC/GB_PHY_GMII/rxd_to_mac_3" BEL
+        "GB_MAC/GB_PHY_GMII/rxd_to_mac_2" BEL
+        "GB_MAC/GB_PHY_GMII/rxd_to_mac_1" BEL
+        "GB_MAC/GB_PHY_GMII/rxd_to_mac_0" BEL
+        "GB_MAC/GB_PHY_GMII/rx_dv_to_mac";
+TIMEGRP gmii_rx = BEL "phy_gmii_rxd<7>" BEL "phy_gmii_rxd<6>" BEL
+        "phy_gmii_rxd<5>" BEL "phy_gmii_rxd<4>" BEL "phy_gmii_rxd<3>" BEL
+        "phy_gmii_rxd<2>" BEL "phy_gmii_rxd<1>" BEL "phy_gmii_rxd<0>" BEL
+        "phy_gmii_rx_dv";
+TIMEGRP gmii_tx = BEL "phy_gmii_txd<7>" BEL "phy_gmii_txd<6>" BEL
+        "phy_gmii_txd<5>" BEL "phy_gmii_txd<4>" BEL "phy_gmii_txd<3>" BEL
+        "phy_gmii_txd<2>" BEL "phy_gmii_txd<1>" BEL "phy_gmii_txd<0>" BEL
+        "phy_gmii_txc" BEL "phy_gmii_tx_ctl" BEL "phy_gmii_tx_er";
+PIN SP6_BUFIO2_INSERT_PLL1_ML_BUFIO2_2_pins<0> = BEL
+        "SP6_BUFIO2_INSERT_PLL1_ML_BUFIO2_2" PINNAME DIVCLK;
+PIN DSM0/pll_base_inst/PLL_ADV_pins<2> = BEL "DSM0/pll_base_inst/PLL_ADV"
+        PINNAME CLKIN1;
+TIMEGRP clk_in = PIN "SP6_BUFIO2_INSERT_PLL1_ML_BUFIO2_2_pins<0>" PIN
+        "DSM0/pll_base_inst/PLL_ADV_pins<2>";
+TS_clk_in = PERIOD TIMEGRP "clk_in" 10 ns HIGH 50% INPUT_JITTER 0.25 ns;
+TS_phy_gmii_rxc = PERIOD TIMEGRP "phy_gmii_rxc" 8 ns HIGH 50% INPUT_JITTER
+        0.16 ns;
+TS_DSM0_clkout1 = PERIOD TIMEGRP "DSM0_clkout1" TS_clk_in / 1.25 HIGH 50%
+        INPUT_JITTER 0.25 ns;
+TS_DSM0_clkout0 = PERIOD TIMEGRP "DSM0_clkout0" TS_clk_in / 0.625 HIGH 50%
+        INPUT_JITTER 0.25 ns;
+TS_GB_MAC_GB_PHY_GMII_gmii_rx_clk_tobufg = PERIOD TIMEGRP
+        "GB_MAC_GB_PHY_GMII_gmii_rx_clk_tobufg" TS_phy_gmii_rxc HIGH 50%
+        INPUT_JITTER 0.16 ns;
+TS_GB_MAC_GB_PHY_GMII_gmii_rx_clk_bufio = PERIOD TIMEGRP
+        "GB_MAC_GB_PHY_GMII_gmii_rx_clk_bufio" TS_phy_gmii_rxc HIGH 50%
+        INPUT_JITTER 0.16 ns;
+TIMEGRP "gmii_rx" OFFSET = IN 2 ns VALID 2.6 ns BEFORE COMP "phy_gmii_rxc"
+        "RISING";
+TIMEGRP "gmii_tx" OFFSET = OUT AFTER COMP "clk_in" REFERENCE_PIN BEL
+        "phy_gmii_txc";
+SCHEMATIC END;
+

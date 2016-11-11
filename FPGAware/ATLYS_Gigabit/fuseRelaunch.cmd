@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "E:/Projects/FPGAware/Osaka3/ATLYS_Gigabit/tb_top_2_isim_beh.exe" -prj "E:/Projects/FPGAware/Osaka3/ATLYS_Gigabit/tb_top_2_beh.prj" "work.tb_top_2" 

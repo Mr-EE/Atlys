@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="E:/Projects/FPGAware/Osaka3/ATLYS_TestUART/tb_top_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="constants" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_signed" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="tb_top" />
+            <top_module name="textio" />
+            <top_module name="vcomponents" />
+            <top_module name="vital_primitives" />
+            <top_module name="vital_timing" />
+            <top_module name="vpkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="37" />
+   <wvobject fp_name="/tb_top/clk_in" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_in</obj_property>
+      <obj_property name="ObjectShortName">clk_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/hard_rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">hard_rst</obj_property>
+      <obj_property name="ObjectShortName">hard_rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/leds" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">leds[7:0]</obj_property>
+      <obj_property name="ObjectShortName">leds[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/switches" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">switches[7:0]</obj_property>
+      <obj_property name="ObjectShortName">switches[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/btns" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">btns[4:0]</obj_property>
+      <obj_property name="ObjectShortName">btns[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/UART_LINK/COM_CNTRL/baudx16" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">baudx16</obj_property>
+      <obj_property name="ObjectShortName">baudx16</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uart_rx" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">uart_rx</obj_property>
+      <obj_property name="ObjectShortName">uart_rx</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/UART_LINK/COM_CNTRL/RX/rx_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rx_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_data[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/UART_LINK/COM_CNTRL/rx_data_rdy" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rx_data_rdy</obj_property>
+      <obj_property name="ObjectShortName">rx_data_rdy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/UART_LINK/COM_CNTRL/baud" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">baud</obj_property>
+      <obj_property name="ObjectShortName">baud</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uart_tx" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">uart_tx</obj_property>
+      <obj_property name="ObjectShortName">uart_tx</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/UART_LINK/COM_CNTRL/TX/tx_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tx_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_data[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/UART_LINK/COM_CNTRL/tx_data_done" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tx_data_done</obj_property>
+      <obj_property name="ObjectShortName">tx_data_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/clk_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_i</obj_property>
+      <obj_property name="ObjectShortName">clk_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/rst_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst_i</obj_property>
+      <obj_property name="ObjectShortName">rst_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/master_wb_cyc_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">master_wb_cyc_o</obj_property>
+      <obj_property name="ObjectShortName">master_wb_cyc_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/master_wb_stb_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">master_wb_stb_o</obj_property>
+      <obj_property name="ObjectShortName">master_wb_stb_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/master_wb_wr_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">master_wb_wr_o</obj_property>
+      <obj_property name="ObjectShortName">master_wb_wr_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/master_wb_addr_o" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">master_wb_addr_o[7:0]</obj_property>
+      <obj_property name="ObjectShortName">master_wb_addr_o[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/master_wb_data_o" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">master_wb_data_o[15:0]</obj_property>
+      <obj_property name="ObjectShortName">master_wb_data_o[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/master_wb_data_i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">master_wb_data_i[15:0]</obj_property>
+      <obj_property name="ObjectShortName">master_wb_data_i[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/master_wb_ack_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">master_wb_ack_i</obj_property>
+      <obj_property name="ObjectShortName">master_wb_ack_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/gpio_en_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">gpio_en_o</obj_property>
+      <obj_property name="ObjectShortName">gpio_en_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/gpio_sel_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">gpio_sel_o</obj_property>
+      <obj_property name="ObjectShortName">gpio_sel_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/gpio_addr_o" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">gpio_addr_o[1:0]</obj_property>
+      <obj_property name="ObjectShortName">gpio_addr_o[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/UART_LINK/process_packet_state" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">process_packet_state</obj_property>
+      <obj_property name="ObjectShortName">process_packet_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/UART_LINK/rx_packet_type" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rx_packet_type[2:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_packet_type[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/UART_LINK/rx_packet_address" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rx_packet_address[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_packet_address[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/UART_LINK/rx_packet_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rx_packet_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_packet_data[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/UART_LINK/tx_packet_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tx_packet_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_packet_data[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/UART_LINK/tx_fifo_wr_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tx_fifo_wr_en</obj_property>
+      <obj_property name="ObjectShortName">tx_fifo_wr_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/UART_LINK/tx_fifo_din" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tx_fifo_din[7:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_fifo_din[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/UART_LINK/tx_fifo_full" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tx_fifo_full</obj_property>
+      <obj_property name="ObjectShortName">tx_fifo_full</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/UART_LINK/rx_fifo_rd_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rx_fifo_rd_en</obj_property>
+      <obj_property name="ObjectShortName">rx_fifo_rd_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/UART_LINK/rx_fifo_empty" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rx_fifo_empty</obj_property>
+      <obj_property name="ObjectShortName">rx_fifo_empty</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/UART_LINK/rx_fifo_valid" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rx_fifo_valid</obj_property>
+      <obj_property name="ObjectShortName">rx_fifo_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/UART_LINK/rx_fifo_dout" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rx_fifo_dout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_fifo_dout[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+</wave_config>

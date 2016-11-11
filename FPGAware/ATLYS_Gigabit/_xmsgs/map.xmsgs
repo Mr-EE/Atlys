@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="Map" num="284" delta="new" >Map is running with the multi-threading option on. Map currently supports the use of up to 2 processors. Based on the the user options and machine load, Map will use 2 processors during this run.
+</msg>
+
+<msg type="warning" file="Map" num="303" delta="new" >You are using an internal switch -convert_bram8 
+</msg>
+
+<msg type="info" file="MapLib" num="562" delta="new" >No environment variables are currently set.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">phy_gmii_rx_er</arg> connected to top level port <arg fmt="%s" index="2">phy_gmii_rx_er</arg> has been removed.
+</msg>
+
+<msg type="info" file="MapLib" num="1261" delta="new" >RAMB8BWER block &apos;<arg fmt="%s" index="1">UART_LINK/COM_CNTRL/RX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.WIDE_PRIM9.ram</arg>&apos; has been converted to a RAMB16BWER.
+</msg>
+
+<msg type="info" file="MapLib" num="1261" delta="new" >RAMB8BWER block &apos;<arg fmt="%s" index="1">UART_LINK/COM_CNTRL/TX_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.WIDE_PRIM9.ram</arg>&apos; has been converted to a RAMB16BWER.
+</msg>
+
+<msg type="info" file="Pack" num="1716" delta="new" >Initializing temperature to <arg fmt="%0.3f" index="1">85.000</arg> Celsius. (default - Range: <arg fmt="%0.3f" index="2">0.000</arg> to <arg fmt="%0.3f" index="3">85.000</arg> Celsius)
+</msg>
+
+<msg type="info" file="Pack" num="1720" delta="new" >Initializing voltage to <arg fmt="%0.3f" index="1">1.140</arg> Volts. (default - Range: <arg fmt="%0.3f" index="2">1.140</arg> to <arg fmt="%0.3f" index="3">1.260</arg> Volts)
+</msg>
+
+<msg type="info" file="Map" num="215" delta="new" >The Interim Design Summary has been generated in the MAP Report (.mrp).
+</msg>
+
+<msg type="warning" file="Place" num="838" delta="new" >An IO Bus with more than one IO standard is found.
+<arg fmt="%s" index="1">Components associated with this bus are as follows: 
+	 Comp: switches&lt;0&gt;   IOSTANDARD = LVCMOS33
+	 Comp: switches&lt;1&gt;   IOSTANDARD = LVCMOS33
+	 Comp: switches&lt;2&gt;   IOSTANDARD = LVCMOS33
+	 Comp: switches&lt;3&gt;   IOSTANDARD = LVCMOS33
+	 Comp: switches&lt;4&gt;   IOSTANDARD = LVCMOS33
+	 Comp: switches&lt;5&gt;   IOSTANDARD = LVCMOS33
+	 Comp: switches&lt;6&gt;   IOSTANDARD = LVCMOS33
+	 Comp: switches&lt;7&gt;   IOSTANDARD = LVCMOS18
+
+</arg>
+</msg>
+
+<msg type="info" file="Pack" num="1650" delta="new" >Map created a placed design.
+</msg>
+
+</messages>
+

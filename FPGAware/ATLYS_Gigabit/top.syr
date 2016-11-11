@@ -1,0 +1,1304 @@
+Release 14.2 - xst P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.22 secs
+ 
+--> WARNING:Xst:1583 - You are using an internal switch '-infer_ramb8'.
+Reading design: top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top"
+Output Format                      : NGC
+Target Device                      : xc6slx45-2-csg324
+
+---- Source Options
+Top Module Name                    : top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+infer_ramb8                        : no
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "E:\Projects\FPGAware\Osaka3\ATLYS_Gigabit\ipcore_dir\asyncfifo_16d_8w.vhd" into library work
+Parsing entity <asyncfifo_16d_8w>.
+Parsing architecture <asyncfifo_16d_8w_a> of entity <asyncfifo_16d_8w>.
+Parsing VHDL file "E:\Projects\FPGAware\Osaka3\ATLYS_Gigabit\ipcore_dir\dsm_clk_in_100.vhd" into library work
+Parsing entity <dsm_clk_in_100>.
+Parsing architecture <xilinx> of entity <dsm_clk_in_100>.
+Parsing VHDL file "E:\Projects\FPGAware\Osaka3\ATLYS_Gigabit\ipcore_dir\dsm_clk_in_100\example_design\dsm_clk_in_100_exdes.vhd" into library work
+Parsing entity <dsm_clk_in_100_exdes>.
+Parsing architecture <xilinx> of entity <dsm_clk_in_100_exdes>.
+Parsing VHDL file "E:\Projects\FPGAware\Osaka3\ATLYS_Gigabit\ipcore_dir\bram_tdp_2000d_16wr_8rd.vhd" into library work
+Parsing entity <bram_tdp_2000d_16wr_8rd>.
+Parsing architecture <bram_tdp_2000d_16wr_8rd_a> of entity <bram_tdp_2000d_16wr_8rd>.
+Parsing VHDL file "E:\Projects\FPGAware\Osaka3\ATLYS_Gigabit\ipcore_dir\bram_sdp_2000d_8wr_16rd.vhd" into library work
+Parsing entity <bram_sdp_2000d_8wr_16rd>.
+Parsing architecture <bram_sdp_2000d_8wr_16rd_a> of entity <bram_sdp_2000d_8wr_16rd>.
+Parsing VHDL file "E:\Projects\FPGAware\Osaka3\ATLYS_Gigabit\ipcore_dir\bram_sdp_1024d_16wr_16rd.vhd" into library work
+Parsing entity <bram_sdp_1024d_16wr_16rd>.
+Parsing architecture <bram_sdp_1024d_16wr_16rd_a> of entity <bram_sdp_1024d_16wr_16rd>.
+Parsing VHDL file "E:\Projects\FPGAware\Osaka3\ATLYS_Gigabit\ipcore_dir\bram_sdp_1024d_16wr_16rd_synth.vhd" into library work
+Parsing entity <bram_sdp_1024d_16wr_16rd>.
+Parsing architecture <spartan6> of entity <bram_sdp_1024d_16wr_16rd>.
+Parsing VHDL file "E:\Projects\FPGAware\Osaka3\ATLYS_Gigabit\src\constants.vhd" into library work
+Parsing package <constants>.
+Parsing VHDL file "E:\Projects\FPGAware\Osaka3\ATLYS_Gigabit\src\uart_tx.vhd" into library work
+Parsing entity <uart_tx>.
+Parsing architecture <rtl> of entity <uart_tx>.
+Parsing VHDL file "E:\Projects\FPGAware\Osaka3\ATLYS_Gigabit\src\uart_rx.vhd" into library work
+Parsing entity <uart_rx>.
+Parsing architecture <rtl> of entity <uart_rx>.
+Parsing VHDL file "E:\Projects\FPGAware\Osaka3\ATLYS_Gigabit\src\uart_baud_gen.vhd" into library work
+Parsing entity <uart_baud_gen>.
+Parsing architecture <rtl> of entity <uart_baud_gen>.
+Parsing VHDL file "E:\Projects\FPGAware\Osaka3\ATLYS_Gigabit\src\uart_cntrl.vhd" into library work
+Parsing entity <uart_cntrl>.
+Parsing architecture <rtl> of entity <uart_cntrl>.
+Parsing VHDL file "E:\Projects\FPGAware\Osaka3\ATLYS_Gigabit\src\gmii_if.vhd" into library work
+Parsing entity <gmii_if>.
+Parsing architecture <rtl> of entity <gmii_if>.
+Parsing VHDL file "E:\Projects\FPGAware\Osaka3\ATLYS_Gigabit\src\debounce.vhd" into library work
+Parsing entity <debounce>.
+Parsing architecture <rtl> of entity <debounce>.
+Parsing VHDL file "E:\Projects\FPGAware\Osaka3\ATLYS_Gigabit\src\sync_reset.vhd" into library work
+Parsing entity <sync_reset>.
+Parsing architecture <rtl> of entity <sync_reset>.
+Parsing VHDL file "E:\Projects\FPGAware\Osaka3\ATLYS_Gigabit\src\mdio_if.vhd" into library work
+Parsing entity <mdio_if>.
+Parsing architecture <rtl> of entity <mdio_if>.
+Parsing VHDL file "E:\Projects\FPGAware\Osaka3\ATLYS_Gigabit\src\led_blink.vhd" into library work
+Parsing entity <led_blink>.
+Parsing architecture <rtl> of entity <led_blink>.
+Parsing VHDL file "E:\Projects\FPGAware\Osaka3\ATLYS_Gigabit\src\gpio.vhd" into library work
+Parsing entity <gpio>.
+Parsing architecture <rtl> of entity <gpio>.
+Parsing VHDL file "E:\Projects\FPGAware\Osaka3\ATLYS_Gigabit\src\gigabit_mac.vhd" into library work
+Parsing entity <gigabit_mac>.
+Parsing architecture <rtl> of entity <gigabit_mac>.
+Parsing VHDL file "E:\Projects\FPGAware\Osaka3\ATLYS_Gigabit\src\bazlink.vhd" into library work
+Parsing entity <bazlink>.
+Parsing architecture <rtl> of entity <bazlink>.
+Parsing VHDL file "E:\Projects\FPGAware\Osaka3\ATLYS_Gigabit\src\Top.vhd" into library work
+Parsing entity <top>.
+Parsing architecture <rtl> of entity <top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <top> (architecture <rtl>) from library <work>.
+
+Elaborating entity <dsm_clk_in_100> (architecture <xilinx>) from library <work>.
+
+Elaborating entity <sync_reset> (architecture <rtl>) from library <work>.
+
+Elaborating entity <bazlink> (architecture <rtl>) from library <work>.
+
+Elaborating entity <uart_cntrl> (architecture <rtl>) from library <work>.
+
+Elaborating entity <uart_baud_gen> (architecture <rtl>) from library <work>.
+
+Elaborating entity <uart_tx> (architecture <rtl>) from library <work>.
+
+Elaborating entity <uart_rx> (architecture <rtl>) from library <work>.
+WARNING:HDLCompiler:1127 - "E:\Projects\FPGAware\Osaka3\ATLYS_Gigabit\src\uart_rx.vhd" Line 48: Assignment to rx_frame_err ignored, since the identifier is never used
+
+Elaborating entity <asyncfifo_16d_8w> (architecture <asyncfifo_16d_8w_a>) from library <work>.
+INFO:HDLCompiler:679 - "E:\Projects\FPGAware\Osaka3\ATLYS_Gigabit\src\bazlink.vhd" Line 304. Case statement is complete. others clause is never selected
+
+Elaborating entity <gpio> (architecture <rtl>) from library <work>.
+
+Elaborating entity <debounce> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <led_blink> (architecture <rtl>) from library <work>.
+
+Elaborating entity <mdio_if> (architecture <rtl>) from library <work>.
+INFO:HDLCompiler:679 - "E:\Projects\FPGAware\Osaka3\ATLYS_Gigabit\src\mdio_if.vhd" Line 121. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "E:\Projects\FPGAware\Osaka3\ATLYS_Gigabit\src\mdio_if.vhd" Line 320. Case statement is complete. others clause is never selected
+
+Elaborating entity <gigabit_mac> (architecture <rtl>) from library <work>.
+
+Elaborating entity <bram_tdp_2000d_16wr_8rd> (architecture <bram_tdp_2000d_16wr_8rd_a>) from library <work>.
+
+Elaborating entity <bram_sdp_2000d_8wr_16rd> (architecture <bram_sdp_2000d_8wr_16rd_a>) from library <work>.
+
+Elaborating entity <bram_sdp_1024d_16wr_16rd> (architecture <spartan6>) from library <work>.
+
+Elaborating entity <gmii_if> (architecture <rtl>) from library <work>.
+INFO:HDLCompiler:679 - "E:\Projects\FPGAware\Osaka3\ATLYS_Gigabit\src\gigabit_mac.vhd" Line 473. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "E:\Projects\FPGAware\Osaka3\ATLYS_Gigabit\src\gigabit_mac.vhd" Line 575. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "E:\Projects\FPGAware\Osaka3\ATLYS_Gigabit\src\gigabit_mac.vhd" Line 675. Case statement is complete. others clause is never selected
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <top>.
+    Related source file is "E:\Projects\FPGAware\Osaka3\ATLYS_Gigabit\src\Top.vhd".
+    Summary:
+	inferred   4 Multiplexer(s).
+Unit <top> synthesized.
+
+Synthesizing Unit <dsm_clk_in_100>.
+    Related source file is "E:\Projects\FPGAware\Osaka3\ATLYS_Gigabit\ipcore_dir\dsm_clk_in_100.vhd".
+    Summary:
+	no macro.
+Unit <dsm_clk_in_100> synthesized.
+
+Synthesizing Unit <sync_reset>.
+    Related source file is "E:\Projects\FPGAware\Osaka3\ATLYS_Gigabit\src\sync_reset.vhd".
+    Found 20-bit register for signal <rst_shift_reg>.
+    Summary:
+	inferred  20 D-type flip-flop(s).
+Unit <sync_reset> synthesized.
+
+Synthesizing Unit <bazlink>.
+    Related source file is "E:\Projects\FPGAware\Osaka3\ATLYS_Gigabit\src\bazlink.vhd".
+    Found 1-bit register for signal <PROCESS_PACKET.wr_data_hi>.
+    Found 1-bit register for signal <PROCESS_PACKET.rd_data_hi>.
+    Found 3-bit register for signal <rx_packet_type>.
+    Found 3-bit register for signal <process_packet_state>.
+    Found 8-bit register for signal <rx_packet_address>.
+    Found 16-bit register for signal <rx_packet_data>.
+    Found 16-bit register for signal <tx_packet_data>.
+    Found 1-bit register for signal <wb_wr_o>.
+    Found 1-bit register for signal <wb_stb_o>.
+    Found 1-bit register for signal <wb_cyc_o>.
+    Found 1-bit register for signal <rx_fifo_rd_en>.
+    Found 1-bit register for signal <tx_fifo_wr_en>.
+    Found 8-bit register for signal <tx_fifo_din>.
+    Found finite state machine <FSM_0> for signal <process_packet_state>.
+    -----------------------------------------------------------------------
+    | States             | 8                                              |
+    | Transitions        | 22                                             |
+    | Inputs             | 9                                              |
+    | Outputs            | 5                                              |
+    | Clock              | clk_i (rising_edge)                            |
+    | Reset              | rst_i (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | packet_idle                                    |
+    | Power Up State     | packet_idle                                    |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred  58 D-type flip-flop(s).
+	inferred   6 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <bazlink> synthesized.
+
+Synthesizing Unit <uart_cntrl>.
+    Related source file is "E:\Projects\FPGAware\Osaka3\ATLYS_Gigabit\src\uart_cntrl.vhd".
+    Summary:
+	no macro.
+Unit <uart_cntrl> synthesized.
+
+Synthesizing Unit <uart_baud_gen>.
+    Related source file is "E:\Projects\FPGAware\Osaka3\ATLYS_Gigabit\src\uart_baud_gen.vhd".
+    Found 5-bit register for signal <cnt2>.
+    Found 9-bit register for signal <cnt1>.
+    Found 1-bit register for signal <baud>.
+    Found 1-bit register for signal <baudx16>.
+    Found 9-bit adder for signal <cnt1[8]_GND_14_o_add_1_OUT> created at line 60.
+    Found 5-bit adder for signal <cnt2[4]_GND_14_o_add_4_OUT> created at line 67.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  16 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <uart_baud_gen> synthesized.
+
+Synthesizing Unit <uart_tx>.
+    Related source file is "E:\Projects\FPGAware\Osaka3\ATLYS_Gigabit\src\uart_tx.vhd".
+    Found 1-bit register for signal <tx_empty>.
+    Found 1-bit register for signal <tx_out>.
+    Found 1-bit register for signal <tx_data_done>.
+    Found 4-bit register for signal <cnt>.
+    Found 8-bit register for signal <tx_reg>.
+    Found 4-bit adder for signal <cnt[3]_GND_15_o_add_10_OUT> created at line 84.
+    Found 3-bit subtractor for signal <GND_15_o_GND_15_o_sub_5_OUT<2:0>> created at line 75.
+    Found 1-bit 8-to-1 multiplexer for signal <GND_15_o_tx_reg[7]_Mux_5_o> created at line 75.
+    Found 4-bit comparator greater for signal <cnt[3]_PWR_14_o_LessThan_4_o> created at line 74
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  15 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred  14 Multiplexer(s).
+Unit <uart_tx> synthesized.
+
+Synthesizing Unit <uart_rx>.
+    Related source file is "E:\Projects\FPGAware\Osaka3\ATLYS_Gigabit\src\uart_rx.vhd".
+    Found 1-bit register for signal <rx_d2>.
+    Found 1-bit register for signal <rx_d1>.
+    Found 8-bit register for signal <rx_data>.
+    Found 8-bit register for signal <rx_reg>.
+    Found 4-bit register for signal <rx_sample_cnt>.
+    Found 4-bit register for signal <rx_data_cnt>.
+    Found 1-bit register for signal <rx_data_rdy>.
+    Found 1-bit register for signal <rx_busy>.
+    Found 4-bit adder for signal <rx_sample_cnt[3]_GND_17_o_add_1_OUT> created at line 78.
+    Found 4-bit adder for signal <rx_data_cnt[3]_GND_17_o_add_16_OUT> created at line 103.
+    Found 4-bit adder for signal <rx_sample_cnt[3]_GND_17_o_add_17_OUT> created at line 105.
+    Found 4-bit comparator greater for signal <rx_data_cnt[3]_PWR_16_o_LessThan_8_o> created at line 87
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  28 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred  25 Multiplexer(s).
+Unit <uart_rx> synthesized.
+
+Synthesizing Unit <gpio>.
+    Related source file is "E:\Projects\FPGAware\Osaka3\ATLYS_Gigabit\src\gpio.vhd".
+    Found 7-bit register for signal <reg_led>.
+    Found 8-bit register for signal <wb_data_o>.
+    Found 1-bit register for signal <wb_int_ack_o>.
+    Found 8-bit 4-to-1 multiplexer for signal <wb_addr_i[1]_GND_21_o_wide_mux_7_OUT> created at line 159.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <gpio> synthesized.
+
+Synthesizing Unit <debounce>.
+    Related source file is "E:\Projects\FPGAware\Osaka3\ATLYS_Gigabit\src\debounce.vhd".
+        counter_size = 19
+    Found 20-bit register for signal <counter_out>.
+    Found 2-bit register for signal <flipflops>.
+    Found 1-bit register for signal <sig_o>.
+    Found 20-bit adder for signal <counter_out[19]_GND_22_o_add_0_OUT> created at line 58.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  23 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <debounce> synthesized.
+
+Synthesizing Unit <led_blink>.
+    Related source file is "E:\Projects\FPGAware\Osaka3\ATLYS_Gigabit\src\led_blink.vhd".
+    Found 26-bit register for signal <cnt1>.
+    Found 1-bit register for signal <blink>.
+    Found 26-bit adder for signal <cnt1[25]_GND_23_o_add_1_OUT> created at line 59.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  27 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <led_blink> synthesized.
+
+Synthesizing Unit <mdio_if>.
+    Related source file is "E:\Projects\FPGAware\Osaka3\ATLYS_Gigabit\src\mdio_if.vhd".
+    Found 16-bit register for signal <wb_data_o>.
+    Found 16-bit register for signal <reg_wr_data>.
+    Found 11-bit register for signal <reg_addr>.
+    Found 7-bit register for signal <MDIO_CLK_DIVIDE.cnt>.
+    Found 5-bit register for signal <MDIO_INTERFACE.bitpos>.
+    Found 2-bit register for signal <mdio_state>.
+    Found 1-bit register for signal <mdio_start>.
+    Found 1-bit register for signal <mdio_clk_int>.
+    Found 1-bit register for signal <MDIO_INTERFACE.packet_end>.
+    Found 1-bit register for signal <mdio_busy>.
+    Found 1-bit register for signal <mdio_sel>.
+    Found 1-bit register for signal <mdio_int_o>.
+    Found 1-bit register for signal <wb_int_ack_o>.
+    Found 1-bit register for signal <mdio_clk_int_dly>.
+    Found 17-bit register for signal <mdio_rd_data>.
+    Found finite state machine <FSM_1> for signal <mdio_state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 21                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 2                                              |
+    | Clock              | clk_i (rising_edge)                            |
+    | Reset              | rst_i (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | st0_idle                                       |
+    | Power Up State     | st0_idle                                       |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 7-bit adder for signal <MDIO_CLK_DIVIDE.cnt[6]_GND_24_o_add_17_OUT> created at line 207.
+    Found 5-bit adder for signal <MDIO_INTERFACE.bitpos[4]_GND_24_o_add_39_OUT> created at line 314.
+    Found 4-bit subtractor for signal <GND_24_o_GND_24_o_sub_24_OUT<3:0>> created at line 266.
+    Found 5-bit subtractor for signal <GND_24_o_GND_24_o_sub_31_OUT<4:0>> created at line 289.
+    Found 16-bit 4-to-1 multiplexer for signal <wb_addr_i[1]_reg_rd_data[15]_wide_mux_0_OUT> created at line 116.
+    Found 1-bit 14-to-1 multiplexer for signal <GND_24_o_X_20_o_Mux_24_o> created at line 266.
+    Found 1-bit 17-to-1 multiplexer for signal <GND_24_o_X_20_o_Mux_31_o> created at line 289.
+    Found 5-bit 3-to-1 multiplexer for signal <mdio_state[1]_MDIO_INTERFACE.bitpos[4]_wide_mux_45_OUT> created at line 232.
+    Found 1-bit 3-to-1 multiplexer for signal <mdio_state[1]_MDIO_INTERFACE.packet_end_Mux_46_o> created at line 232.
+    Found 1-bit 4-to-1 multiplexer for signal <mdio_state[1]_GND_24_o_Mux_47_o> created at line 232.
+    Found 1-bit 4-to-1 multiplexer for signal <mdio_state[1]_mdio_int_o_Mux_48_o> created at line 232.
+    Found 1-bit tristate buffer for signal <pad_mdio> created at line 168
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred  80 D-type flip-flop(s).
+	inferred  43 Multiplexer(s).
+	inferred   1 Tristate(s).
+	inferred   1 Finite State Machine(s).
+Unit <mdio_if> synthesized.
+
+Synthesizing Unit <gigabit_mac>.
+    Related source file is "E:\Projects\FPGAware\Osaka3\ATLYS_Gigabit\src\gigabit_mac.vhd".
+INFO:Xst:3210 - "E:\Projects\FPGAware\Osaka3\ATLYS_Gigabit\src\gigabit_mac.vhd" line 261: Output port <rx_er_to_mac> of the instance <GB_PHY_GMII> is unconnected or connected to loadless signal.
+    Register <rx_ifg_bram_addrb> equivalent to <tx_bram_addra> has been removed
+    Register <rx_bram_addrb> equivalent to <tx_bram_addra> has been removed
+    Found 16-bit register for signal <wb_data_o>.
+    Found 16-bit register for signal <tx_ifg_length>.
+    Found 16-bit register for signal <tx_max_send_packets>.
+    Found 16-bit register for signal <reg_bram_wr_data>.
+    Found 16-bit register for signal <tx_bram_dina>.
+    Found 16-bit register for signal <reg_bram_rd_data>.
+    Found 16-bit register for signal <GB_TX_FSM.tx_ifgpos>.
+    Found 16-bit register for signal <GB_RX_FSM.rx_ifg_cnt>.
+    Found 10-bit register for signal <tx_packet_length>.
+    Found 10-bit register for signal <reg_bram_address>.
+    Found 10-bit register for signal <tx_bram_addra>.
+    Found 10-bit register for signal <GB_TX_FSM.tx_bytepos>.
+    Found 11-bit register for signal <GB_TX_FSM.tx_addr>.
+    Found 11-bit register for signal <tx_bram_addrb>.
+    Found 11-bit register for signal <GB_RX_FSM.rx_addr>.
+    Found 11-bit register for signal <rx_bram_addra>.
+    Found 64-bit register for signal <GB_TX_FSM.packets_sent>.
+    Found 64-bit register for signal <tx_packets_sent>.
+    Found 64-bit register for signal <GB_RX_FSM.packets_received>.
+    Found 64-bit register for signal <rx_packets_received>.
+    Found 8-bit register for signal <txd_from_mac>.
+    Found 8-bit register for signal <rx_bram_dina>.
+    Found 3-bit register for signal <tx_en_from_mac_pipe>.
+    Found 2-bit register for signal <tx_state>.
+    Found 2-bit register for signal <rx_state>.
+    Found 1-bit register for signal <bram_access>.
+    Found 1-bit register for signal <reg_mac_cntrl<4>>.
+    Found 1-bit register for signal <reg_mac_cntrl<3>>.
+    Found 1-bit register for signal <reg_mac_cntrl<1>>.
+    Found 1-bit register for signal <reg_mac_cntrl<0>>.
+    Found 1-bit register for signal <bram_access_busy>.
+    Found 1-bit register for signal <tx_bram_ena>.
+    Found 1-bit register for signal <tx_bram_wra>.
+    Found 1-bit register for signal <rx_bram_enb>.
+    Found 1-bit register for signal <rx_ifg_bram_enb>.
+    Found 1-bit register for signal <tx_packet_generator_en_dly>.
+    Found 1-bit register for signal <tx_bram_enb>.
+    Found 1-bit register for signal <rx_bram_ena>.
+    Found 1-bit register for signal <rx_bram_wra>.
+    Found 1-bit register for signal <rx_packet_generator_en_dly>.
+    Found 1-bit register for signal <wb_int_ack_o>.
+    Found 1-bit register for signal <reg_mac_cntrl<5>>.
+    Found 4-bit register for signal <bram_access_state>.
+    Found 1-bit register for signal <tx_en_from_mac>.
+    Found 1-bit register for signal <rx_ifg_bram_ena>.
+    Found 1-bit register for signal <rx_ifg_bram_wra>.
+    Found 10-bit register for signal <rx_ifg_bram_addra>.
+    Found 16-bit register for signal <rx_ifg_bram_dina>.
+    Found finite state machine <FSM_2> for signal <tx_state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 2                                              |
+    | Clock              | clk_gtx (rising_edge)                          |
+    | Reset              | rst_i (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | st0_idle                                       |
+    | Power Up State     | st0_idle                                       |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_3> for signal <rx_state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 2                                              |
+    | Clock              | rx_clk (rising_edge)                           |
+    | Reset              | rst_i (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | st0_idle                                       |
+    | Power Up State     | st0_idle                                       |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_4> for signal <bram_access_state>.
+    -----------------------------------------------------------------------
+    | States             | 11                                             |
+    | Transitions        | 28                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 5                                              |
+    | Clock              | clk_i (rising_edge)                            |
+    | Power Up State     | st0_idle                                       |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 11-bit adder for signal <n0296> created at line 540.
+    Found 10-bit adder for signal <GB_TX_FSM.tx_bytepos[9]_GND_28_o_add_52_OUT> created at line 550.
+    Found 11-bit adder for signal <GB_TX_FSM.tx_addr[10]_GND_28_o_add_53_OUT> created at line 551.
+    Found 64-bit adder for signal <GB_TX_FSM.packets_sent[63]_GND_28_o_add_58_OUT> created at line 1241.
+    Found 16-bit adder for signal <GB_TX_FSM.tx_ifgpos[15]_GND_28_o_add_64_OUT> created at line 571.
+    Found 11-bit adder for signal <GB_RX_FSM.rx_addr[10]_GND_28_o_add_90_OUT> created at line 658.
+    Found 16-bit adder for signal <GB_RX_FSM.rx_ifg_cnt[15]_GND_28_o_add_91_OUT> created at line 663.
+    Found 64-bit adder for signal <GB_RX_FSM.packets_received[63]_GND_28_o_add_92_OUT> created at line 1241.
+    Found 11-bit comparator equal for signal <BUS_0001_GND_28_o_equal_52_o> created at line 540
+    Found 16-bit comparator equal for signal <tx_ifg_length[15]_GB_TX_FSM.tx_ifgpos[15]_equal_58_o> created at line 557
+    Found 64-bit comparator equal for signal <GB_TX_FSM.packets_sent[63]_GND_28_o_equal_61_o> created at line 565
+    Summary:
+	inferred   8 Adder/Subtractor(s).
+	inferred 533 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+	inferred  49 Multiplexer(s).
+	inferred   3 Finite State Machine(s).
+Unit <gigabit_mac> synthesized.
+
+Synthesizing Unit <gmii_if>.
+    Related source file is "E:\Projects\FPGAware\Osaka3\ATLYS_Gigabit\src\gmii_if.vhd".
+WARNING:Xst:647 - Input <tx_reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <rx_reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 8-bit register for signal <gmii_txd>.
+    Found 1-bit register for signal <rx_dv_to_mac>.
+    Found 1-bit register for signal <rx_er_to_mac>.
+    Found 8-bit register for signal <rxd_to_mac>.
+    Found 1-bit register for signal <gmii_tx_en>.
+    WARNING:Xst:2404 -  FFs/Latches <gmii_tx_er<0:0>> (without init value) have a constant value of 0 in block <gmii_if>.
+    Summary:
+	inferred  19 D-type flip-flop(s).
+Unit <gmii_if> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 33
+ 10-bit adder                                          : 1
+ 11-bit adder                                          : 3
+ 16-bit adder                                          : 2
+ 20-bit adder                                          : 13
+ 26-bit adder                                          : 1
+ 3-bit subtractor                                      : 1
+ 4-bit adder                                           : 4
+ 4-bit subtractor                                      : 1
+ 5-bit adder                                           : 2
+ 5-bit subtractor                                      : 1
+ 64-bit adder                                          : 2
+ 7-bit adder                                           : 1
+ 9-bit adder                                           : 1
+# Registers                                            : 138
+ 1-bit register                                        : 62
+ 10-bit register                                       : 5
+ 11-bit register                                       : 5
+ 16-bit register                                       : 13
+ 17-bit register                                       : 1
+ 2-bit register                                        : 13
+ 20-bit register                                       : 14
+ 26-bit register                                       : 1
+ 3-bit register                                        : 2
+ 4-bit register                                        : 3
+ 5-bit register                                        : 2
+ 64-bit register                                       : 4
+ 7-bit register                                        : 2
+ 8-bit register                                        : 10
+ 9-bit register                                        : 1
+# Comparators                                          : 5
+ 11-bit comparator equal                               : 1
+ 16-bit comparator equal                               : 1
+ 4-bit comparator greater                              : 2
+ 64-bit comparator equal                               : 1
+# Multiplexers                                         : 158
+ 1-bit 14-to-1 multiplexer                             : 1
+ 1-bit 17-to-1 multiplexer                             : 1
+ 1-bit 2-to-1 multiplexer                              : 76
+ 1-bit 3-to-1 multiplexer                              : 1
+ 1-bit 4-to-1 multiplexer                              : 2
+ 1-bit 8-to-1 multiplexer                              : 1
+ 10-bit 2-to-1 multiplexer                             : 2
+ 11-bit 2-to-1 multiplexer                             : 2
+ 16-bit 2-to-1 multiplexer                             : 27
+ 16-bit 4-to-1 multiplexer                             : 1
+ 17-bit 2-to-1 multiplexer                             : 1
+ 20-bit 2-to-1 multiplexer                             : 13
+ 26-bit 2-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 15
+ 5-bit 2-to-1 multiplexer                              : 5
+ 5-bit 3-to-1 multiplexer                              : 1
+ 64-bit 2-to-1 multiplexer                             : 2
+ 7-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 3
+ 8-bit 4-to-1 multiplexer                              : 1
+ 9-bit 2-to-1 multiplexer                              : 1
+# Tristates                                            : 1
+ 1-bit tristate buffer                                 : 1
+# FSMs                                                 : 5
+# Xors                                                 : 13
+ 1-bit xor2                                            : 13
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/bram_tdp_2000d_16wr_8rd.ngc>.
+Reading core <ipcore_dir/bram_sdp_2000d_8wr_16rd.ngc>.
+Reading core <ipcore_dir/bram_sdp_1024d_16wr_16rd.ngc>.
+Reading core <ipcore_dir/asyncfifo_16d_8w.ngc>.
+Loading core <bram_tdp_2000d_16wr_8rd> for timing and area information for instance <TX_BRAM_DATA>.
+Loading core <bram_sdp_2000d_8wr_16rd> for timing and area information for instance <RX_BRAM_DATA>.
+Loading core <bram_sdp_1024d_16wr_16rd> for timing and area information for instance <RX_IFG_BRAM_DATA>.
+Loading core <asyncfifo_16d_8w> for timing and area information for instance <TX_FIFO>.
+Loading core <asyncfifo_16d_8w> for timing and area information for instance <RX_FIFO>.
+INFO:Xst:2261 - The FF/Latch <rx_ifg_bram_ena> in Unit <GB_MAC> is equivalent to the following FF/Latch, which will be removed : <rx_ifg_bram_wra_0> 
+INFO:Xst:2261 - The FF/Latch <wb_stb_o> in Unit <UART_LINK> is equivalent to the following FF/Latch, which will be removed : <wb_cyc_o> 
+
+Synthesizing (advanced) Unit <debounce>.
+The following registers are absorbed into counter <counter_out>: 1 register on signal <counter_out>.
+Unit <debounce> synthesized (advanced).
+
+Synthesizing (advanced) Unit <gigabit_mac>.
+The following registers are absorbed into counter <GB_RX_FSM.packets_received>: 1 register on signal <GB_RX_FSM.packets_received>.
+The following registers are absorbed into counter <GB_TX_FSM.tx_addr>: 1 register on signal <GB_TX_FSM.tx_addr>.
+The following registers are absorbed into counter <GB_RX_FSM.rx_addr>: 1 register on signal <GB_RX_FSM.rx_addr>.
+Unit <gigabit_mac> synthesized (advanced).
+
+Synthesizing (advanced) Unit <led_blink>.
+The following registers are absorbed into counter <cnt1>: 1 register on signal <cnt1>.
+Unit <led_blink> synthesized (advanced).
+
+Synthesizing (advanced) Unit <mdio_if>.
+The following registers are absorbed into counter <MDIO_CLK_DIVIDE.cnt>: 1 register on signal <MDIO_CLK_DIVIDE.cnt>.
+Unit <mdio_if> synthesized (advanced).
+
+Synthesizing (advanced) Unit <uart_baud_gen>.
+The following registers are absorbed into counter <cnt2>: 1 register on signal <cnt2>.
+The following registers are absorbed into counter <cnt1>: 1 register on signal <cnt1>.
+Unit <uart_baud_gen> synthesized (advanced).
+WARNING:Xst:2677 - Node <mdio_rd_data_16> of sequential type is unconnected in block <mdio_if>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 13
+ 10-bit adder                                          : 1
+ 11-bit adder                                          : 1
+ 16-bit adder                                          : 2
+ 3-bit subtractor                                      : 1
+ 4-bit adder                                           : 4
+ 4-bit subtractor                                      : 1
+ 5-bit adder                                           : 1
+ 5-bit subtractor                                      : 1
+ 64-bit adder                                          : 1
+# Counters                                             : 20
+ 11-bit up counter                                     : 2
+ 20-bit up counter                                     : 13
+ 26-bit up counter                                     : 1
+ 5-bit up counter                                      : 1
+ 64-bit up counter                                     : 1
+ 7-bit up counter                                      : 1
+ 9-bit up counter                                      : 1
+# Registers                                            : 717
+ Flip-Flops                                            : 717
+# Comparators                                          : 5
+ 11-bit comparator equal                               : 1
+ 16-bit comparator equal                               : 1
+ 4-bit comparator greater                              : 2
+ 64-bit comparator equal                               : 1
+# Multiplexers                                         : 177
+ 1-bit 14-to-1 multiplexer                             : 1
+ 1-bit 17-to-1 multiplexer                             : 1
+ 1-bit 2-to-1 multiplexer                              : 119
+ 1-bit 3-to-1 multiplexer                              : 1
+ 1-bit 4-to-1 multiplexer                              : 2
+ 1-bit 8-to-1 multiplexer                              : 1
+ 10-bit 2-to-1 multiplexer                             : 2
+ 16-bit 2-to-1 multiplexer                             : 26
+ 16-bit 4-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 14
+ 5-bit 2-to-1 multiplexer                              : 4
+ 5-bit 3-to-1 multiplexer                              : 1
+ 64-bit 2-to-1 multiplexer                             : 1
+ 8-bit 2-to-1 multiplexer                              : 2
+ 8-bit 4-to-1 multiplexer                              : 1
+# FSMs                                                 : 5
+# Xors                                                 : 13
+ 1-bit xor2                                            : 13
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <rx_ifg_bram_wra_0> in Unit <gigabit_mac> is equivalent to the following FF/Latch, which will be removed : <rx_ifg_bram_ena> 
+INFO:Xst:2261 - The FF/Latch <wb_stb_o> in Unit <bazlink> is equivalent to the following FF/Latch, which will be removed : <wb_cyc_o> 
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <GB_MAC/FSM_4> on signal <bram_access_state[1:4]> with user encoding.
+----------------------------------
+ State                | Encoding
+----------------------------------
+ st0_idle             | 0000
+ st1a_tx_bram_wr0     | 0001
+ st2a_tx_bram_rd0     | 0010
+ st3a_tx_bram_rd1     | 0011
+ st4a_tx_bram_rd2     | 0100
+ st1b_rx_bram_rd0     | 0101
+ st2b_rx_bram_rd1     | 0110
+ st3b_rx_bram_rd2     | 0111
+ st1c_rx_ifg_bram_rd0 | 1000
+ st2c_rx_ifg_bram_rd1 | 1001
+ st3c_rx_ifg_bram_rd2 | 1010
+----------------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <GB_MAC/FSM_3> on signal <rx_state[1:2]> with user encoding.
+--------------------------------
+ State              | Encoding
+--------------------------------
+ st0_idle           | 00
+ st1_check_rx_state | 01
+ st2_wait_for_data  | 10
+ st3_receive_data   | 11
+--------------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <GB_MAC/FSM_2> on signal <tx_state[1:2]> with user encoding.
+---------------------------
+ State         | Encoding
+---------------------------
+ st0_idle      | 00
+ st1_send_data | 01
+ st2_wait_ifg  | 10
+---------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <UART_LINK/FSM_0> on signal <process_packet_state[1:3]> with user encoding.
+---------------------------------
+ State               | Encoding
+---------------------------------
+ packet_idle         | 000
+ get_packet_address  | 001
+ get_packet_data     | 010
+ wb_master_wr        | 011
+ wb_master_rd        | 100
+ send_packet_header  | 101
+ send_packet_address | 110
+ send_packet_data    | 111
+---------------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <GB_PHY_MDIO/FSM_1> on signal <mdio_state[1:2]> with user encoding.
+-----------------------------------
+ State                 | Encoding
+-----------------------------------
+ st0_idle              | 00
+ st1_sendctrlpacket    | 01
+ st2_senddatapacket    | 10
+ st3_receivedatapacket | 11
+-----------------------------------
+INFO:Xst:1901 - Instance DSM0/pll_base_inst in unit DSM0/pll_base_inst of type PLL_BASE has been replaced by PLL_ADV
+INFO:Xst:2261 - The FF/Latch <rx_bram_wra_0> in Unit <gigabit_mac> is equivalent to the following FF/Latch, which will be removed : <rx_bram_ena> 
+INFO:Xst:2261 - The FF/Latch <tx_empty> in Unit <uart_tx> is equivalent to the following FF/Latch, which will be removed : <tx_data_done> 
+
+Optimizing unit <gmii_if> ...
+
+Optimizing unit <top> ...
+
+Optimizing unit <gpio> ...
+
+Optimizing unit <debounce> ...
+
+Optimizing unit <gigabit_mac> ...
+
+Optimizing unit <bazlink> ...
+
+Optimizing unit <uart_tx> ...
+
+Optimizing unit <uart_rx> ...
+
+Optimizing unit <sync_reset> ...
+WARNING:Xst:2677 - Node <GB_MAC/GB_PHY_GMII/rx_er_to_mac> of sequential type is unconnected in block <top>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 6.
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <UART_LINK/COM_CNTRL/TX_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <UART_LINK/COM_CNTRL/TX_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <UART_LINK/COM_CNTRL/TX_FIFO> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <UART_LINK/COM_CNTRL/TX_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <UART_LINK/COM_CNTRL/RX_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <UART_LINK/COM_CNTRL/RX_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <UART_LINK/COM_CNTRL/RX_FIFO> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <UART_LINK/COM_CNTRL/RX_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <UART_LINK/COM_CNTRL/TX_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <UART_LINK/COM_CNTRL/TX_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <UART_LINK/COM_CNTRL/TX_FIFO> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <UART_LINK/COM_CNTRL/TX_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <UART_LINK/COM_CNTRL/RX_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <UART_LINK/COM_CNTRL/RX_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <UART_LINK/COM_CNTRL/RX_FIFO> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <UART_LINK/COM_CNTRL/RX_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+FlipFlop GB_MAC/tx_state_FSM_FFd1 has been replicated 1 time(s)
+FlipFlop GB_PHY_MDIO/MDIO_INTERFACE.bitpos_0 has been replicated 2 time(s)
+FlipFlop GB_PHY_MDIO/MDIO_INTERFACE.bitpos_1 has been replicated 1 time(s)
+FlipFlop GB_PHY_MDIO/MDIO_INTERFACE.bitpos_2 has been replicated 2 time(s)
+FlipFlop GB_PHY_MDIO/MDIO_INTERFACE.bitpos_3 has been replicated 1 time(s)
+FlipFlop UART_LINK/rx_packet_address_2 has been replicated 1 time(s)
+FlipFlop UART_LINK/rx_packet_address_3 has been replicated 1 time(s)
+FlipFlop UART_LINK/rx_packet_address_4 has been replicated 1 time(s)
+FlipFlop UART_LINK/wb_wr_o has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+Processing Unit <top> :
+INFO:Xst:741 - HDL ADVISOR - A 20-bit shift register was found for signal <SYNC_RST/rst_shift_reg_19> and currently occupies 20 logic cells (10 slices). Removing the set/reset logic would take advantage of SRL32 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+Unit <top> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1129
+ Flip-Flops                                            : 1129
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 2320
+#      GND                         : 8
+#      INV                         : 19
+#      LUT1                        : 119
+#      LUT2                        : 246
+#      LUT3                        : 446
+#      LUT4                        : 133
+#      LUT5                        : 129
+#      LUT6                        : 248
+#      MUXCY                       : 480
+#      MUXF7                       : 14
+#      VCC                         : 1
+#      XORCY                       : 477
+# FlipFlops/Latches                : 1269
+#      FD                          : 33
+#      FDC                         : 394
+#      FDCE                        : 729
+#      FDE                         : 51
+#      FDP                         : 54
+#      FDPE                        : 6
+#      ODDR2                       : 2
+# RAMS                             : 5
+#      RAMB16BWER                  : 3
+#      RAMB8BWER                   : 2
+# Clock Buffers                    : 6
+#      BUFG                        : 6
+# IO Buffers                       : 51
+#      BUFIO2                      : 1
+#      IBUF                        : 26
+#      IBUFG                       : 1
+#      IOBUF                       : 1
+#      OBUF                        : 22
+# Others                           : 11
+#      IODELAY2                    : 10
+#      PLL_ADV                     : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45csg324-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            1269  out of  54576     2%  
+ Number of Slice LUTs:                 1340  out of  27288     4%  
+    Number used as Logic:              1340  out of  27288     4%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1720
+   Number with an unused Flip Flop:     451  out of   1720    26%  
+   Number with an unused LUT:           380  out of   1720    22%  
+   Number of fully used LUT-FF pairs:   889  out of   1720    51%  
+   Number of unique control sets:        78
+
+IO Utilization: 
+ Number of IOs:                          50
+ Number of bonded IOBs:                  50  out of    218    22%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                4  out of    116     3%  
+    Number using Block RAM only:          4
+ Number of BUFG/BUFGCTRLs:                6  out of     16    37%  
+ Number of PLL_ADVs:                      1  out of      4    25%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+------------------------------------+----------------------------+-------+
+Clock Signal                        | Clock buffer(FF name)      | Load  |
+------------------------------------+----------------------------+-------+
+DSM0/pll_base_inst/CLKOUT0          | BUFG                       | 745   |
+GB_PHY_MDIO/mdio_clk_int            | NONE(GB_PHY_MDIO/MDC_ODDR2)| 2     |
+phy_gmii_rxc                        | IBUF+BUFIO2+BUFG           | 216   |
+DSM0/pll_base_inst/CLKOUT1          | BUFG                       | 205   |
+UART_LINK/COM_CNTRL/BAUD_GEN/baud   | BUFG                       | 47    |
+UART_LINK/COM_CNTRL/BAUD_GEN/baudx16| BUFG                       | 66    |
+------------------------------------+----------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 5.734ns (Maximum Frequency: 174.398MHz)
+   Minimum input arrival time before clock: 4.021ns
+   Maximum output required time after clock: 7.757ns
+   Maximum combinational path delay: 1.328ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'DSM0/pll_base_inst/CLKOUT0'
+  Clock period: 5.734ns (frequency: 174.398MHz)
+  Total number of paths / destination ports: 16343 / 2005
+-------------------------------------------------------------------------
+Delay:               5.734ns (Levels of Logic = 5)
+  Source:            GB_PHY_MDIO/MDIO_INTERFACE.bitpos_2_1 (FF)
+  Destination:       GB_PHY_MDIO/mdio_int_o (FF)
+  Source Clock:      DSM0/pll_base_inst/CLKOUT0 rising
+  Destination Clock: DSM0/pll_base_inst/CLKOUT0 rising
+
+  Data Path: GB_PHY_MDIO/MDIO_INTERFACE.bitpos_2_1 to GB_PHY_MDIO/mdio_int_o
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             1   0.525   1.137  GB_PHY_MDIO/MDIO_INTERFACE.bitpos_2_1 (GB_PHY_MDIO/MDIO_INTERFACE.bitpos_2_1)
+     LUT6:I0->O            1   0.254   0.682  GB_PHY_MDIO/Mmux_mdio_state[1]_mdio_int_o_Mux_48_o13 (GB_PHY_MDIO/Mmux_mdio_state[1]_mdio_int_o_Mux_48_o12)
+     LUT6:I5->O            1   0.254   0.682  GB_PHY_MDIO/Mmux_mdio_state[1]_mdio_int_o_Mux_48_o14 (GB_PHY_MDIO/Mmux_mdio_state[1]_mdio_int_o_Mux_48_o14)
+     LUT6:I5->O            1   0.254   0.682  GB_PHY_MDIO/Mmux_mdio_state[1]_mdio_int_o_Mux_48_o16 (GB_PHY_MDIO/Mmux_mdio_state[1]_mdio_int_o_Mux_48_o16)
+     LUT6:I5->O            1   0.254   0.682  GB_PHY_MDIO/Mmux_mdio_state[1]_mdio_int_o_Mux_48_o17 (GB_PHY_MDIO/Mmux_mdio_state[1]_mdio_int_o_Mux_48_o17)
+     LUT6:I5->O            1   0.254   0.000  GB_PHY_MDIO/Mmux_mdio_state[1]_mdio_int_o_Mux_48_o113 (GB_PHY_MDIO/mdio_state[1]_mdio_int_o_Mux_48_o)
+     FDCE:D                    0.074          GB_PHY_MDIO/mdio_int_o
+    ----------------------------------------
+    Total                      5.734ns (1.869ns logic, 3.865ns route)
+                                       (32.6% logic, 67.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'phy_gmii_rxc'
+  Clock period: 5.219ns (frequency: 191.621MHz)
+  Total number of paths / destination ports: 5064 / 350
+-------------------------------------------------------------------------
+Delay:               5.219ns (Levels of Logic = 1)
+  Source:            GB_MAC/rx_state_FSM_FFd1 (FF)
+  Destination:       GB_MAC/GB_RX_FSM.packets_received_63 (FF)
+  Source Clock:      phy_gmii_rxc rising
+  Destination Clock: phy_gmii_rxc rising
+
+  Data Path: GB_MAC/rx_state_FSM_FFd1 to GB_MAC/GB_RX_FSM.packets_received_63
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q            100   0.525   2.209  GB_MAC/rx_state_FSM_FFd1 (GB_MAC/rx_state_FSM_FFd1)
+     LUT5:I4->O           64   0.254   1.929  GB_MAC/_n0508_inv21 (GB_MAC/_n0508_inv)
+     FDCE:CE                   0.302          GB_MAC/GB_RX_FSM.packets_received_0
+    ----------------------------------------
+    Total                      5.219ns (1.081ns logic, 4.138ns route)
+                                       (20.7% logic, 79.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'DSM0/pll_base_inst/CLKOUT1'
+  Clock period: 5.320ns (frequency: 187.970MHz)
+  Total number of paths / destination ports: 6630 / 315
+-------------------------------------------------------------------------
+Delay:               5.320ns (Levels of Logic = 5)
+  Source:            GB_MAC/GB_TX_FSM.tx_bytepos_1 (FF)
+  Destination:       GB_MAC/tx_state_FSM_FFd2 (FF)
+  Source Clock:      DSM0/pll_base_inst/CLKOUT1 rising
+  Destination Clock: DSM0/pll_base_inst/CLKOUT1 rising
+
+  Data Path: GB_MAC/GB_TX_FSM.tx_bytepos_1 to GB_MAC/tx_state_FSM_FFd2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             5   0.525   0.841  GB_MAC/GB_TX_FSM.tx_bytepos_1 (GB_MAC/GB_TX_FSM.tx_bytepos_1)
+     LUT2:I1->O            2   0.254   1.002  GB_MAC/BUS_0001_GND_28_o_equal_52_o11211 (GB_MAC/BUS_0001_GND_28_o_equal_52_o1121)
+     LUT6:I2->O            1   0.254   0.682  GB_MAC/BUS_0001_GND_28_o_equal_52_o114_1 (GB_MAC/BUS_0001_GND_28_o_equal_52_o114)
+     LUT2:I1->O            2   0.254   0.726  GB_MAC/Mmux_GND_28_o_BUS_0001_MUX_364_o11 (GB_MAC/tx_state_FSM_FFd2-In1)
+     LUT6:I5->O            1   0.254   0.000  GB_MAC/tx_state_FSM_FFd2-In7_lut1 (GB_MAC/tx_state_FSM_FFd2-In7_lut1)
+     MUXCY:S->O            1   0.454   0.000  GB_MAC/tx_state_FSM_FFd2-In7_cy1 (GB_MAC/tx_state_FSM_FFd2-In)
+     FDC:D                     0.074          GB_MAC/tx_state_FSM_FFd2
+    ----------------------------------------
+    Total                      5.320ns (2.069ns logic, 3.251ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'UART_LINK/COM_CNTRL/BAUD_GEN/baud'
+  Clock period: 5.098ns (frequency: 196.155MHz)
+  Total number of paths / destination ports: 239 / 89
+-------------------------------------------------------------------------
+Delay:               5.098ns (Levels of Logic = 4)
+  Source:            UART_LINK/COM_CNTRL/TX/cnt_0 (FF)
+  Destination:       UART_LINK/COM_CNTRL/TX/tx_out (FF)
+  Source Clock:      UART_LINK/COM_CNTRL/BAUD_GEN/baud rising
+  Destination Clock: UART_LINK/COM_CNTRL/BAUD_GEN/baud rising
+
+  Data Path: UART_LINK/COM_CNTRL/TX/cnt_0 to UART_LINK/COM_CNTRL/TX/tx_out
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              9   0.525   1.204  UART_LINK/COM_CNTRL/TX/cnt_0 (UART_LINK/COM_CNTRL/TX/cnt_0)
+     LUT3:I0->O            2   0.235   0.834  UART_LINK/COM_CNTRL/TX/Msub_GND_15_o_GND_15_o_sub_5_OUT<2:0>_xor<0>11 (UART_LINK/COM_CNTRL/TX/GND_15_o_GND_15_o_sub_5_OUT<0>)
+     LUT6:I4->O            1   0.250   0.790  UART_LINK/COM_CNTRL/TX/Mmux_GND_15_o_tx_reg[7]_Mux_5_o_4 (UART_LINK/COM_CNTRL/TX/Mmux_GND_15_o_tx_reg[7]_Mux_5_o_4)
+     LUT6:I4->O            1   0.250   0.682  UART_LINK/COM_CNTRL/TX/Mmux_tx_out_GND_15_o_MUX_42_o1 (UART_LINK/COM_CNTRL/TX/tx_out_GND_15_o_MUX_42_o)
+     LUT6:I5->O            1   0.254   0.000  UART_LINK/COM_CNTRL/TX/tx_out_rstpot (UART_LINK/COM_CNTRL/TX/tx_out_rstpot)
+     FDP:D                     0.074          UART_LINK/COM_CNTRL/TX/tx_out
+    ----------------------------------------
+    Total                      5.098ns (1.588ns logic, 3.510ns route)
+                                       (31.1% logic, 68.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'UART_LINK/COM_CNTRL/BAUD_GEN/baudx16'
+  Clock period: 4.461ns (frequency: 224.165MHz)
+  Total number of paths / destination ports: 492 / 130
+-------------------------------------------------------------------------
+Delay:               4.461ns (Levels of Logic = 2)
+  Source:            UART_LINK/COM_CNTRL/RX/rx_sample_cnt_3 (FF)
+  Destination:       UART_LINK/COM_CNTRL/RX/rx_data_7 (FF)
+  Source Clock:      UART_LINK/COM_CNTRL/BAUD_GEN/baudx16 rising
+  Destination Clock: UART_LINK/COM_CNTRL/BAUD_GEN/baudx16 rising
+
+  Data Path: UART_LINK/COM_CNTRL/RX/rx_sample_cnt_3 to UART_LINK/COM_CNTRL/RX/rx_data_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             11   0.525   1.469  UART_LINK/COM_CNTRL/RX/rx_sample_cnt_3 (UART_LINK/COM_CNTRL/RX/rx_sample_cnt_3)
+     LUT5:I0->O            1   0.254   0.682  UART_LINK/COM_CNTRL/RX/_n0146_inv21 (UART_LINK/COM_CNTRL/RX/_n0146_inv2)
+     LUT6:I5->O            9   0.254   0.975  UART_LINK/COM_CNTRL/RX/GND_17_o_GND_17_o_MUX_73_o1 (UART_LINK/COM_CNTRL/RX/GND_17_o_GND_17_o_MUX_73_o)
+     FDCE:CE                   0.302          UART_LINK/COM_CNTRL/RX/rx_data_0
+    ----------------------------------------
+    Total                      4.461ns (1.335ns logic, 3.126ns route)
+                                       (29.9% logic, 70.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'DSM0/pll_base_inst/CLKOUT0'
+  Total number of paths / destination ports: 31 / 29
+-------------------------------------------------------------------------
+Offset:              4.021ns (Levels of Logic = 3)
+  Source:            phy_mdio (PAD)
+  Destination:       GB_PHY_MDIO/mdio_rd_data_15 (FF)
+  Destination Clock: DSM0/pll_base_inst/CLKOUT0 rising
+
+  Data Path: phy_mdio to GB_PHY_MDIO/mdio_rd_data_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IOBUF:IO->O          13   1.328   1.098  phy_mdio_IOBUF (N70)
+     LUT3:I2->O            4   0.254   1.032  GB_PHY_MDIO/mux11121 (GB_PHY_MDIO/mux1112)
+     LUT6:I3->O            1   0.235   0.000  GB_PHY_MDIO/mux61 (GB_PHY_MDIO/mdio_rd_data[16]_mdio_rd_data[16]_mux_41_OUT<15>)
+     FDE:D                     0.074          GB_PHY_MDIO/mdio_rd_data_15
+    ----------------------------------------
+    Total                      4.021ns (1.891ns logic, 2.130ns route)
+                                       (47.0% logic, 53.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'phy_gmii_rxc'
+  Total number of paths / destination ports: 9 / 9
+-------------------------------------------------------------------------
+Offset:              0.755ns (Levels of Logic = 0)
+  Source:            GB_MAC/GB_PHY_GMII/rxdata_bus[7].delay_gmii_rxd:DATAOUT (PAD)
+  Destination:       GB_MAC/GB_PHY_GMII/rxd_to_mac_7 (FF)
+  Destination Clock: phy_gmii_rxc rising
+
+  Data Path: GB_MAC/GB_PHY_GMII/rxdata_bus[7].delay_gmii_rxd:DATAOUT to GB_MAC/GB_PHY_GMII/rxd_to_mac_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    IODELAY2:DATAOUT       1   0.000   0.681  GB_MAC/GB_PHY_GMII/rxdata_bus[7].delay_gmii_rxd (GB_MAC/GB_PHY_GMII/gmii_rxd_delay<7>)
+     FD:D                      0.074          GB_MAC/GB_PHY_GMII/rxd_to_mac_7
+    ----------------------------------------
+    Total                      0.755ns (0.074ns logic, 0.681ns route)
+                                       (9.8% logic, 90.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'UART_LINK/COM_CNTRL/BAUD_GEN/baudx16'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              2.083ns (Levels of Logic = 1)
+  Source:            uart_rx (PAD)
+  Destination:       UART_LINK/COM_CNTRL/RX/rx_d1 (FF)
+  Destination Clock: UART_LINK/COM_CNTRL/BAUD_GEN/baudx16 rising
+
+  Data Path: uart_rx to UART_LINK/COM_CNTRL/RX/rx_d1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.681  uart_rx_IBUF (uart_rx_IBUF)
+     FDP:D                     0.074          UART_LINK/COM_CNTRL/RX/rx_d1
+    ----------------------------------------
+    Total                      2.083ns (1.402ns logic, 0.681ns route)
+                                       (67.3% logic, 32.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'DSM0/pll_base_inst/CLKOUT0'
+  Total number of paths / destination ports: 11 / 10
+-------------------------------------------------------------------------
+Offset:              7.757ns (Levels of Logic = 2)
+  Source:            SYNC_RST/rst_shift_reg_19 (FF)
+  Destination:       phy_rst (PAD)
+  Source Clock:      DSM0/pll_base_inst/CLKOUT0 rising
+
+  Data Path: SYNC_RST/rst_shift_reg_19 to phy_rst
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q           1061   0.525   2.613  SYNC_RST/rst_shift_reg_19 (SYNC_RST/rst_shift_reg_19)
+     INV:I->O             28   0.255   1.452  phy_rst1_INV_0 (GB_MAC/rst_i_inv)
+     OBUF:I->O                 2.912          phy_rst_OBUF (phy_rst)
+    ----------------------------------------
+    Total                      7.757ns (3.692ns logic, 4.065ns route)
+                                       (47.6% logic, 52.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'DSM0/pll_base_inst/CLKOUT1'
+  Total number of paths / destination ports: 9 / 9
+-------------------------------------------------------------------------
+Offset:              4.118ns (Levels of Logic = 1)
+  Source:            GB_MAC/GB_PHY_GMII/gmii_txd_7 (FF)
+  Destination:       phy_gmii_txd<7> (PAD)
+  Source Clock:      DSM0/pll_base_inst/CLKOUT1 rising
+
+  Data Path: GB_MAC/GB_PHY_GMII/gmii_txd_7 to phy_gmii_txd<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.525   0.681  GB_MAC/GB_PHY_GMII/gmii_txd_7 (GB_MAC/GB_PHY_GMII/gmii_txd_7)
+     OBUF:I->O                 2.912          phy_gmii_txd_7_OBUF (phy_gmii_txd<7>)
+    ----------------------------------------
+    Total                      4.118ns (3.437ns logic, 0.681ns route)
+                                       (83.5% logic, 16.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'UART_LINK/COM_CNTRL/BAUD_GEN/baud'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.162ns (Levels of Logic = 1)
+  Source:            UART_LINK/COM_CNTRL/TX/tx_out (FF)
+  Destination:       uart_tx (PAD)
+  Source Clock:      UART_LINK/COM_CNTRL/BAUD_GEN/baud rising
+
+  Data Path: UART_LINK/COM_CNTRL/TX/tx_out to uart_tx
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q              2   0.525   0.725  UART_LINK/COM_CNTRL/TX/tx_out (UART_LINK/COM_CNTRL/TX/tx_out)
+     OBUF:I->O                 2.912          uart_tx_OBUF (uart_tx)
+    ----------------------------------------
+    Total                      4.162ns (3.437ns logic, 0.725ns route)
+                                       (82.6% logic, 17.4% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 11 / 11
+-------------------------------------------------------------------------
+Delay:               1.328ns (Levels of Logic = 1)
+  Source:            phy_gmii_rxd<0> (PAD)
+  Destination:       GB_MAC/GB_PHY_GMII/rxdata_bus[0].delay_gmii_rxd:IDATAIN (PAD)
+
+  Data Path: phy_gmii_rxd<0> to GB_MAC/GB_PHY_GMII/rxdata_bus[0].delay_gmii_rxd:IDATAIN
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             0   1.328   0.000  phy_gmii_rxd_0_IBUF (phy_gmii_rxd_0_IBUF)
+    IODELAY2:IDATAIN           0.000          GB_MAC/GB_PHY_GMII/rxdata_bus[0].delay_gmii_rxd
+    ----------------------------------------
+    Total                      1.328ns (1.328ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock DSM0/pll_base_inst/CLKOUT0
+------------------------------------+---------+---------+---------+---------+
+                                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------------+---------+---------+---------+---------+
+DSM0/pll_base_inst/CLKOUT0          |    5.734|         |         |         |
+DSM0/pll_base_inst/CLKOUT1          |    3.862|         |         |         |
+UART_LINK/COM_CNTRL/BAUD_GEN/baud   |    1.280|         |         |         |
+UART_LINK/COM_CNTRL/BAUD_GEN/baudx16|    1.280|         |         |         |
+phy_gmii_rxc                        |    3.616|         |         |         |
+------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock DSM0/pll_base_inst/CLKOUT1
+--------------------------+---------+---------+---------+---------+
+                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock              |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------+---------+---------+---------+---------+
+DSM0/pll_base_inst/CLKOUT0|    8.069|         |         |         |
+DSM0/pll_base_inst/CLKOUT1|    5.320|         |         |         |
+--------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock GB_PHY_MDIO/mdio_clk_int
+--------------------------+---------+---------+---------+---------+
+                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock              |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------+---------+---------+---------+---------+
+DSM0/pll_base_inst/CLKOUT0|    3.138|         |         |         |
+--------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock UART_LINK/COM_CNTRL/BAUD_GEN/baud
+---------------------------------+---------+---------+---------+---------+
+                                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------+---------+---------+---------+---------+
+DSM0/pll_base_inst/CLKOUT0       |    3.597|         |         |         |
+UART_LINK/COM_CNTRL/BAUD_GEN/baud|    5.098|         |         |         |
+---------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock UART_LINK/COM_CNTRL/BAUD_GEN/baudx16
+------------------------------------+---------+---------+---------+---------+
+                                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------------+---------+---------+---------+---------+
+DSM0/pll_base_inst/CLKOUT0          |    3.597|         |         |         |
+UART_LINK/COM_CNTRL/BAUD_GEN/baudx16|    4.461|         |         |         |
+------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock phy_gmii_rxc
+--------------------------+---------+---------+---------+---------+
+                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock              |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------+---------+---------+---------+---------+
+DSM0/pll_base_inst/CLKOUT0|    5.147|         |         |         |
+phy_gmii_rxc              |    5.219|         |         |         |
+--------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 20.00 secs
+Total CPU time to Xst completion: 20.44 secs
+ 
+--> 
+
+Total memory usage is 283556 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    7 (   0 filtered)
+Number of infos    :   26 (   0 filtered)
+

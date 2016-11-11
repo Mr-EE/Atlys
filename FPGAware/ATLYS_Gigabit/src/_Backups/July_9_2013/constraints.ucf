@@ -1,0 +1,43 @@
+#Created by Constraints Editor (xc6slx45-csg324-2) - 2013/07/08
+NET "clk_in" TNM_NET = clk_in;
+TIMESPEC TS_clk_in = PERIOD "clk_in" 10 ns HIGH 50% INPUT_JITTER 250 ps;
+
+#NET "phy_gmii_rxc" TNM_NET = phy_gmii_rxc;
+#TIMESPEC TS_phy_gmii_rxc = PERIOD "phy_gmii_rxc" 8 ns HIGH 50% INPUT_JITTER 160 ps;
+#
+#INST "phy_gmii_rxd<0>" TNM = gmii_rx;
+#INST "phy_gmii_rxd<1>" TNM = gmii_rx;
+#INST "phy_gmii_rxd<2>" TNM = gmii_rx;
+#INST "phy_gmii_rxd<3>" TNM = gmii_rx;
+#INST "phy_gmii_rxd<4>" TNM = gmii_rx;
+#INST "phy_gmii_rxd<5>" TNM = gmii_rx;
+#INST "phy_gmii_rxd<6>" TNM = gmii_rx;
+#INST "phy_gmii_rxd<7>" TNM = gmii_rx;
+#INST "phy_gmii_rx_dv" TNM = gmii_rx;
+#INST "phy_gmii_rx_er" TNM = gmii_rx;
+#INST "*GB_MAC*GB_PHY_GMII*rxd_to_mac*"           IOB = true;
+#INST "*GB_MAC*GB_PHY_GMII*rx_dv_to_mac"          IOB = true;
+#INST "*GB_MAC*GB_PHY_GMII*rx_er_to_mac"          IOB = true;
+#INST "*GB_MAC*GB_PHY_GMII*delay_gmii_rx_dv"      IDELAY_VALUE = 10;
+#INST "*GB_MAC*GB_PHY_GMII*delay_gmii_rx_er"      IDELAY_VALUE = 10;
+#INST "*GB_MAC*GB_PHY_GMII*delay_gmii_rxd"        IDELAY_VALUE = 0;
+#TIMEGRP "gmii_rx" OFFSET = IN 2.4 ns VALID 2.9 ns BEFORE "phy_gmii_rxc" RISING;
+
+INST "phy_gmii_txc" TNM = gmii_tx;
+INST "phy_gmii_txd<0>" TNM = gmii_tx;
+INST "phy_gmii_txd<1>" TNM = gmii_tx;
+INST "phy_gmii_txd<2>" TNM = gmii_tx;
+INST "phy_gmii_txd<3>" TNM = gmii_tx;
+INST "phy_gmii_txd<4>" TNM = gmii_tx;
+INST "phy_gmii_txd<5>" TNM = gmii_tx;
+INST "phy_gmii_txd<6>" TNM = gmii_tx;
+INST "phy_gmii_txd<7>" TNM = gmii_tx;
+INST "phy_gmii_tx_ctl" TNM = gmii_tx;
+INST "phy_gmii_tx_er" TNM = gmii_tx;
+INST "GB_MAC/GB_PHY_GMII/gmii_txd*"             IOB = true;
+#INST "GB_MAC/GB_PHY_GMII/gmii_tx_en"            IOB = true;
+#INST "GB_MAC/GB_PHY_GMII/gmii_tx_er"            IOB = true;
+TIMEGRP "gmii_tx" OFFSET = OUT AFTER "clk_in" REFERENCE_PIN "phy_gmii_txc";
+
+
+

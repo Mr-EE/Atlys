@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="E:/Projects/FPGAware/Osaka3/ATLYS_TestUART/tb_uart_cntrl_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="constants" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="tb_uart_cntrl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="16" />
+   <wvobject fp_name="/tb_uart_cntrl/uut/rst_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst_i</obj_property>
+      <obj_property name="ObjectShortName">rst_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart_cntrl/uut/clk_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_i</obj_property>
+      <obj_property name="ObjectShortName">clk_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart_cntrl/uut/baud" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">baud</obj_property>
+      <obj_property name="ObjectShortName">baud</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart_cntrl/uut/tx_fifo_din" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tx_fifo_din[7:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_fifo_din[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart_cntrl/uut/tx_fifo_wr_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tx_fifo_wr_en</obj_property>
+      <obj_property name="ObjectShortName">tx_fifo_wr_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart_cntrl/uut/tx_fifo_full" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tx_fifo_full</obj_property>
+      <obj_property name="ObjectShortName">tx_fifo_full</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart_cntrl/uut/sdo" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sdo</obj_property>
+      <obj_property name="ObjectShortName">sdo</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart_cntrl/uut/baudx16" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">baudx16</obj_property>
+      <obj_property name="ObjectShortName">baudx16</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart_cntrl/uut/rx_fifo_dout" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rx_fifo_dout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_fifo_dout[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart_cntrl/uut/rx_fifo_rd_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rx_fifo_rd_en</obj_property>
+      <obj_property name="ObjectShortName">rx_fifo_rd_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart_cntrl/uut/rx_fifo_empty" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rx_fifo_empty</obj_property>
+      <obj_property name="ObjectShortName">rx_fifo_empty</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart_cntrl/uut/rx_fifo_valid" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rx_fifo_valid</obj_property>
+      <obj_property name="ObjectShortName">rx_fifo_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart_cntrl/uut/sdi" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sdi</obj_property>
+      <obj_property name="ObjectShortName">sdi</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart_cntrl/uut/u2/baudx16" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">baudx16</obj_property>
+      <obj_property name="ObjectShortName">baudx16</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart_cntrl/uut/u2/rx_data_rdy" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rx_data_rdy</obj_property>
+      <obj_property name="ObjectShortName">rx_data_rdy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart_cntrl/uut/rx_fifo/wr_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wr_en</obj_property>
+      <obj_property name="ObjectShortName">wr_en</obj_property>
+   </wvobject>
+</wave_config>

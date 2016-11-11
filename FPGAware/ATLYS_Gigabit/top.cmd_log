@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "E:/Projects/FPGAware/Osaka3/ATLYS_Gigabit/top.xst" -ofn "E:/Projects/FPGAware/Osaka3/ATLYS_Gigabit/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc src/pinlock.ucf -uc src/constraints.ucf -p xc6slx45-csg324-2 top.ngc top.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -detail -ir off -pr off -convert_bram8 -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -mt 4 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "E:/Projects/FPGAware/Osaka3/ATLYS_Gigabit/top.xst" -ofn "E:/Projects/FPGAware/Osaka3/ATLYS_Gigabit/top.syr" 

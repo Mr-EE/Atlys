@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="E:/Projects/FPGAware/Osaka3/ATLYS_Gigabit/tb_mdio_if_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="constants" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="tb_mdio_if" />
+            <top_module name="textio" />
+            <top_module name="vcomponents" />
+            <top_module name="vital_primitives" />
+            <top_module name="vital_timing" />
+            <top_module name="vpkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="27" />
+   <wvobject fp_name="/tb_mdio_if/clk_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_i</obj_property>
+      <obj_property name="ObjectShortName">clk_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mdio_if/rst_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst_i</obj_property>
+      <obj_property name="ObjectShortName">rst_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mdio_if/wb_cyc_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wb_cyc_i</obj_property>
+      <obj_property name="ObjectShortName">wb_cyc_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mdio_if/wb_stb_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wb_stb_i</obj_property>
+      <obj_property name="ObjectShortName">wb_stb_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mdio_if/wb_wr_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wb_wr_i</obj_property>
+      <obj_property name="ObjectShortName">wb_wr_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mdio_if/wb_addr_i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">wb_addr_i[1:0]</obj_property>
+      <obj_property name="ObjectShortName">wb_addr_i[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mdio_if/wb_data_i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">wb_data_i[15:0]</obj_property>
+      <obj_property name="ObjectShortName">wb_data_i[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mdio_if/wb_data_o" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">wb_data_o[15:0]</obj_property>
+      <obj_property name="ObjectShortName">wb_data_o[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mdio_if/wb_ack_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wb_ack_o</obj_property>
+      <obj_property name="ObjectShortName">wb_ack_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mdio_if/pad_mdc" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">pad_mdc</obj_property>
+      <obj_property name="ObjectShortName">pad_mdc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mdio_if/pad_mdio" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">pad_mdio</obj_property>
+      <obj_property name="ObjectShortName">pad_mdio</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mdio_if/uut/mdio_start" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mdio_start</obj_property>
+      <obj_property name="ObjectShortName">mdio_start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mdio_if/uut/mdio_busy" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mdio_busy</obj_property>
+      <obj_property name="ObjectShortName">mdio_busy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mdio_if/uut/mdio_clk_int" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mdio_clk_int</obj_property>
+      <obj_property name="ObjectShortName">mdio_clk_int</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mdio_if/uut/mdio_int_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mdio_int_i</obj_property>
+      <obj_property name="ObjectShortName">mdio_int_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mdio_if/uut/mdio_int_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mdio_int_o</obj_property>
+      <obj_property name="ObjectShortName">mdio_int_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mdio_if/uut/mdio_sel" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mdio_sel</obj_property>
+      <obj_property name="ObjectShortName">mdio_sel</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mdio_if/uut/reg_addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_addr[10:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_addr[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mdio_if/uut/reg_rd_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_rd_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_rd_data[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mdio_if/uut/reg_wr_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_wr_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_wr_data[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mdio_if/uut/mdio_wr_req" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mdio_wr_req</obj_property>
+      <obj_property name="ObjectShortName">mdio_wr_req</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mdio_if/uut/mdio_opcode" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">mdio_opcode[1:0]</obj_property>
+      <obj_property name="ObjectShortName">mdio_opcode[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mdio_if/uut/mdio_phy_addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">mdio_phy_addr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">mdio_phy_addr[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mdio_if/uut/mdio_reg_addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">mdio_reg_addr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">mdio_reg_addr[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mdio_if/uut/mdio_ctrl_packet" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">mdio_ctrl_packet[13:0]</obj_property>
+      <obj_property name="ObjectShortName">mdio_ctrl_packet[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mdio_if/uut/mdio_wr_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">mdio_wr_data[17:0]</obj_property>
+      <obj_property name="ObjectShortName">mdio_wr_data[17:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mdio_if/uut/mdio_state" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">mdio_state</obj_property>
+      <obj_property name="ObjectShortName">mdio_state</obj_property>
+   </wvobject>
+</wave_config>

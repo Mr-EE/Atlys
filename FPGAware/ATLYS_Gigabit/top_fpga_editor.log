@@ -1,0 +1,97 @@
+#:C29    
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.28xd
+#Current Working Directory:
+#:D   E:\Projects\FPGAware\Osaka3\ATLYS_Gigabit
+#Date/Time:
+#:T   Sat Jul 20 20:38:19 2013
+#------------------------------
+	#Reading top.ncd...
+	#Loading device for application Rf_Device from file '6slx45.nph' in environment C:\Xilinx\14.2\ISE_DS\ISE\.
+	#   "top" is an NCD, version 3.2, device xc6slx45, package csg324, speed -2
+	#Design creation date: 2013.07.21.03.31.28
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes
+	#2
+unselect -all
+	#3
+select -k comp 'DSM0/pll_base_inst/PLL_ADV'
+	#4
+unselect -all
+	#5
+unselect -all
+	#6
+select comp 'GB_MAC/wb_addr_i[4]_GND_28_o_wide_mux_0_OUT<1>6'
+	#comp "GB_MAC/wb_addr_i[4]_GND_28_o_wide_mux_0_OUT<1>6",  site "SLICE_X38Y64",  type = SLICEL  (RPM grid X105Y256)
+	#7
+unselect -all
+	#8
+select comp 'GB_MAC/wb_addr_i[4]_GND_28_o_wide_mux_0_OUT<1>6'
+	#comp "GB_MAC/wb_addr_i[4]_GND_28_o_wide_mux_0_OUT<1>6",  site "SLICE_X38Y64",  type = SLICEL  (RPM grid X105Y256)
+	#9
+post block
+	#10
+unselect -all
+	#11
+unselect -all
+	#12
+unselect -all
+	#13
+unselect -all
+	#14
+unselect -all
+	#15
+select rpm 'Shape_10'
+	#RPM Shape_10, type CARRY
+	#16
+unselect -all
+	#17
+select comp 'GPIO_MODULE/DB_SWITCHES_GEN[2].DEBOUNCE_SWITCHES/counter_out<19>'
+	#comp "GPIO_MODULE/DB_SWITCHES_GEN[2].DEBOUNCE_SWITCHES/counter_out<19>",  site "SLICE_X56Y97",  type = SLICEL  (RPM grid X153Y388)
+	#18
+post block
+	#19
+unselect comp 'GPIO_MODULE/DB_SWITCHES_GEN[2].DEBOUNCE_SWITCHES/counter_out<19>'
+	#20
+select -k comp 'btns<3>'
+	#21
+unselect comp 'btns<3>'
+	#22
+select -k comp 'GB_MAC/tx_max_send_packets<11>'
+	#23
+unselect comp 'GB_MAC/tx_max_send_packets<11>'
+	#24
+select -k comp 'GB_MAC/tx_max_send_packets<15>'
+	#25
+unselect comp 'GB_MAC/tx_max_send_packets<15>'
+	#26
+select -k comp 'GB_MAC/tx_max_send_packets<11>'
+	#27
+unselect comp 'GB_MAC/tx_max_send_packets<11>'
+	#28
+select -k comp 'GB_MAC/tx_max_send_packets<15>'
+	#29
+hilite -c yellow
+	#30
+unselect comp 'GB_MAC/tx_max_send_packets<15>'
+	#31
+select -k comp 'GB_MAC/tx_max_send_packets<11>'
+	#32
+unselect comp 'GB_MAC/tx_max_send_packets<11>'
+	#33
+select -k comp 'GB_MAC/tx_max_send_packets<15>'
+	#34
+unhilite -all
+	#35
+unselect comp 'GB_MAC/tx_max_send_packets<15>'
+	#36
+select -k comp 'GB_MAC/tx_packets_sent<3>'
+	#37
+unselect comp 'GB_MAC/tx_packets_sent<3>'
+	#38
+select -k comp 'GB_MAC/tx_max_send_packets<15>'
+	#39
+unselect -all

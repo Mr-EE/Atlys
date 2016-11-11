@@ -1,0 +1,2 @@
+vhdl work ../../dsm_clk_in_100.vhd
+vhdl work ../example_design/dsm_clk_in_100_exdes.vhd

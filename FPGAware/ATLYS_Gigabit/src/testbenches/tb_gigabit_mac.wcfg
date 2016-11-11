@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="E:/Projects/FPGAware/Osaka3/ATLYS_Gigabit/tb_gigabit_mac_tx_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="constants" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_textio" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="tb_gigabit_mac_tx" />
+            <top_module name="textio" />
+            <top_module name="vcomponents" />
+            <top_module name="vital_primitives" />
+            <top_module name="vital_timing" />
+            <top_module name="vpkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="21" />
+   <wvobject fp_name="/tb_gigabit_mac_tx/clk_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_i</obj_property>
+      <obj_property name="ObjectShortName">clk_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_gigabit_mac_tx/rst_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst_i</obj_property>
+      <obj_property name="ObjectShortName">rst_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_gigabit_mac_tx/wb_cyc_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wb_cyc_i</obj_property>
+      <obj_property name="ObjectShortName">wb_cyc_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_gigabit_mac_tx/wb_stb_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wb_stb_i</obj_property>
+      <obj_property name="ObjectShortName">wb_stb_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_gigabit_mac_tx/wb_wr_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wb_wr_i</obj_property>
+      <obj_property name="ObjectShortName">wb_wr_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_gigabit_mac_tx/wb_addr_i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">wb_addr_i[1:0]</obj_property>
+      <obj_property name="ObjectShortName">wb_addr_i[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_gigabit_mac_tx/wb_data_i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">wb_data_i[0:0]</obj_property>
+      <obj_property name="ObjectShortName">wb_data_i[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_gigabit_mac_tx/gmii_rxd" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">gmii_rxd[7:0]</obj_property>
+      <obj_property name="ObjectShortName">gmii_rxd[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_gigabit_mac_tx/wb_data_o" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">wb_data_o[15:0]</obj_property>
+      <obj_property name="ObjectShortName">wb_data_o[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_gigabit_mac_tx/wb_ack_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wb_ack_o</obj_property>
+      <obj_property name="ObjectShortName">wb_ack_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_gigabit_mac_tx/gmii_tx_clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">gmii_tx_clk</obj_property>
+      <obj_property name="ObjectShortName">gmii_tx_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_gigabit_mac_tx/clk_gtx" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_gtx</obj_property>
+      <obj_property name="ObjectShortName">clk_gtx</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_gigabit_mac_tx/uut/packet_start" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">packet_start</obj_property>
+      <obj_property name="ObjectShortName">packet_start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_gigabit_mac_tx/uut/packet_addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">packet_addr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">packet_addr[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_gigabit_mac_tx/uut/packet_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">packet_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">packet_data[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_gigabit_mac_tx/uut/txd_from_mac" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">txd_from_mac[7:0]</obj_property>
+      <obj_property name="ObjectShortName">txd_from_mac[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_gigabit_mac_tx/uut/tx_en_from_mac" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tx_en_from_mac</obj_property>
+      <obj_property name="ObjectShortName">tx_en_from_mac</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_gigabit_mac_tx/uut/gmii_tx_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">gmii_tx_en</obj_property>
+      <obj_property name="ObjectShortName">gmii_tx_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_gigabit_mac_tx/uut/gmii_txd" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">gmii_txd[7:0]</obj_property>
+      <obj_property name="ObjectShortName">gmii_txd[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_gigabit_mac_tx/uut/gigabit_state" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">gigabit_state</obj_property>
+      <obj_property name="ObjectShortName">gigabit_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_gigabit_mac_tx/uut/reg_cntr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_cntr[15:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_cntr[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>
