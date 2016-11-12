@@ -1,1 +1,0 @@
-xst -intstyle ise -ifn "E:/Home_Projects/Projects/Ates/FPGAware/ATLYS_Bitcoin_Miner/top.xst" -ofn "E:/Home_Projects/Projects/Ates/FPGAware/ATLYS_Bitcoin_Miner/top.syr" 
